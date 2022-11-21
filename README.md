@@ -1,1 +1,1 @@
-# exoclimes2023
+# Website for the Exoclimes VI & ExoSLAM
