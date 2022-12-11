@@ -1,3 +1,9 @@
+  <style>
+body {
+    font-family: 'Raleway';font-size: 22px;
+}
+</style>
+
 /* The navigation bar */
 .navbar {
   overflow: hidden;
