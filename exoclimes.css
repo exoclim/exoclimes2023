@@ -13,6 +13,10 @@ body {
   width: 100%; /* Full width */
   text-align: center;
   height:40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 /* Links inside the navbar */
@@ -22,11 +26,7 @@ body {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  text-decoration: none; 
 }
 
 /* Change background on mouse-over */
