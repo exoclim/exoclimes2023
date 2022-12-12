@@ -23,14 +23,6 @@
 
 }
 
-/* LOGO */
-
-.logo {
-
- font-size: 32px;
-
-}
-
 /* NAVBAR MENU */
 
 .menu {
@@ -61,7 +53,7 @@
 
 /* DROPDOWN MENU */
 
-.services {
+.programmes {
 
  position: relative; 
 
@@ -105,7 +97,7 @@
 
 }
 
-.services:hover .dropdown {
+.programmes:hover .dropdown {
 
  display: block;
 
