@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'FutureWave';
+    src: url('../fonts/futurewave-webfont.woff2') format('woff2'),
+         url('../fonts/futurewave-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    height: 100%;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #26428b;
+}
+
+h1.exoslam-title, h2.exoslam-title {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.page-content {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    color: #26428b;
+}
+
+b {
+    font-weight: 700;
+}
+
+.exoclimes-table tr {
+    border-bottom: 1px solid #26428b;
+    color: #26428b;
+}
+
+.exoslam-logo-text {
+    font-family: 'FutureWave', sans-serif;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.blurred-background {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.exoclimes-bg {
+    background: url("../img/exoclimes-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.exoslam-bg {
+    background: url("../img/exoslam-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.vert-spacer {
+    min-height: 100%;
+    padding-bottom: 170px;
+    margin-bottom: -165px;
+}
+
+@media (max-width: 480px) { 
+    .vert-spacer {
+        padding-bottom: 140px;
+        margin-bottom: -135px;
+    }
+}
+
+.exoclimes-btn {
+    color: #26428b;
+    border: 1px solid #26428b;
+    border-radius: 0;
+    padding: 1rem;
+    font-size: 14pt;
+}
+
+.exoclimes-btn:hover {
+    background-color: #26428b;
+}
+
+.footer-copyright, .footer-copyright-exoslam {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    color: #26428b;
+    line-height: 10pt;
+}
+
+.footer-copyright-exoslam, .footer-copyright-exoslam a {
+    color: white;
+}
+
+.footer-logo {
+    max-height: 100px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Menu */
+.header-menu-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0.3em;
+    backdrop-filter: blur(10px);
+}
+
+ul#header-menu {
+    list-style: none;
+}
+
+.navbar-padding {
+    margin: 1em;
+}
+
+.nav-item > .nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.homepage-logo-container {
+    display: inline-block;
+    margin: 5rem auto;
+}
+
+.homepage-logo {
+    margin-bottom: 5rem;
+}
+
+.homepage-pre-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 24pt;
+    text-align: center;
+    color: #26428b;
+}
+
+.homepage-exoclimes-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 52pt;
+    text-align: center;
+    color: #26428b;
+}
+
+.homepage-exoclimes-title-date {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+    text-align: center;
+    color: #26428b;
+}
+
+.homepage-exoslam-logo {
+    font-family: 'FutureWave', sans-serif;
+    font-size: 35pt;
+    text-align: center;
+    color: #26428b;
+}
+
+.homepage-summer-school {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 18pt;
+    text-align: center;
+    color: #26428b;
+    margin-top: -1rem;
+}
+
+.homepage-email-box {
+    font-size: 18pt;
+    color: #26428b;
+}
+
+.homepage-poster {
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+}
+
+.homepage-poster-link > img {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.homepage-poster-link:hover > img {
+    transform: scale(110%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT PAGE */
+
+.committee-list {
+    list-style: none;
+}
+
+.committee-member-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    color: #26428b;
+}
+
+/* LOGISTICS PAGE */
+.logistics-google-maps {
+    height: 480px;
+    width: 100%;
+}
