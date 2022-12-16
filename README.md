@@ -1,1 +1,2 @@
-# Website for the Exoclimes VI & ExoSLAM
+# exoclimes-vi-website
+The website and template for the Exoclimes VI conference. 
