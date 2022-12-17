@@ -110,6 +110,12 @@ b {
     vertical-align: middle;
 }
 
+@media (max-width: 575.98px) {
+    .footer-copyright, .footer-copyright-exoslam {
+        font-size: 12pt;
+    }
+}
+
 /* Menu */
 .header-menu-container {
     background-color: rgba(255, 255, 255, 0.4);
@@ -201,6 +207,25 @@ ul#header-menu {
 .homepage-poster-link:hover > img {
     transform: scale(110%);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 575.98px) {
+    .homepage-exoclimes-logo {
+        font-size: 28pt;
+    }
+
+    .homepage-exoslam-logo {
+        font-size: 18pt;
+    }
+
+    .homepage-summer-school {
+        font-size: 14pt;
+        line-height: 24pt;
+    }
+
+    .homepage-exoclimes-title-date {
+        font-size: 14pt;
+    }
 }
 
 /* ABOUT PAGE */
