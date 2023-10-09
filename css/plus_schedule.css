@@ -32,12 +32,7 @@
         [times] 4em
         [day-1-start] 1fr
         [day-1-end day-2-start] 1fr
-        [day-2-end day-3-start] 1fr
-        [day-3-end day-4-start] 1fr
-        [day-4-end day-5-start] 1fr
-        [day-5-end day-6-start] 1fr
-        [day-6-end day-7-start] 1fr
-        [day-7-end];
+        [day-2-end];
 }
 
 .time-slot {
