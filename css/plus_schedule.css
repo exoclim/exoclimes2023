@@ -31,7 +31,8 @@
     
     grid-template-columns:
         [times] 4em
-        [day-1-start] 1fr;
+        [day-1-start] 1fr
+        [day-1-end];
 }
 
 .time-slot {
