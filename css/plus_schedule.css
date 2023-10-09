@@ -1,0 +1,156 @@
+
+/* Adapted from the gist at https://gist.github.com/lfernandez55/fe204392b466a3fbdd6e0086d9c26969 */
+/* Oringally from this Pen by Mark Root-Wiley: https://codepen.io/mrwweb/pen/rgPOOd */
+/* Article here: https://css-tricks.com/building-a-conference-schedule-with-css-grid/ */
+
+/* Heavily adapted for the layout of */
+/*************************
+ * GRID SCHEDULE LAYOUT
+ *************************/
+ .exoclimes_plus-schedule {
+    overflow-x: scroll;
+    min-width: 10rem;
+    display: grid;
+    gap: 0.25em;
+    grid-template-rows:
+        [days] auto
+        [time-1515] 0.3fr
+        [time-1530] 0.3fr
+        [time-1545] 0.3fr
+        [time-1600] 0.3fr
+        [time-1615] 0.3fr
+        [time-1630] 0.3fr
+        [time-1645] 0.3fr
+        [time-1700] 0.3fr
+        [time-1715] 0.3fr
+        /* Note 1:
+        Use 24hr time for gridline names for simplicity
+        Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+        Try 0.4fr for more compact equal rows. I don't quite understand how that works :)
+        */
+    
+    grid-template-columns:
+        [times] 4em
+        [day-1-start] 1fr;
+}
+
+.time-slot {
+	grid-column: times;
+    font-size: 12pt;
+}
+
+.session {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.session {
+	padding: .5em;
+	border-radius: 2px;
+	font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.session-title,
+.session-time,
+.session-track,
+.session-presenter {
+	display: block;
+}
+
+.session-title,
+.time-slot {
+	margin: 0;
+	font-size: 1em;
+}
+
+.session-title a {
+	color: #000;
+	text-decoration-style: dotted;
+    font-weight: 600;
+    font-size: 12pt;
+    line-height: 18pt;
+}
+
+.track-slot,
+.time-slot {
+	font-weight: bold;
+	font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.day-slot {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+h2.time-slot {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Different types of event. */
+
+.admin-event {
+    background-color: darkorange;
+    color: #000;
+}
+
+.free-time-event {
+    background-color: green;
+    color: #fff;
+}
+
+.free-time-event a {
+    color: white;
+}
+
+.dinner-event {
+    background-color: #ffbf00;
+    color: #000;
+}
+
+.social-event {
+    background-color: yellow;
+    color: #000;
+}
+
+.lecture-event {
+    background-color: lightgray;
+    color: #000;
+}
+
+.practical-event {
+    background-color: papayawhip;
+    color: #000;
+}
+
+.presentations-event {
+    background-color: orchid;
+}
+
+.posters-event {
+    background-color: royalblue;
+    color: white;
+}
+
+.posters-event a {
+    color: white;
+}
+
+.key-item {
+    width: 4rem;
+    height: 2rem;
+    display: inline-block;
+    line-height: inherit;
+    border: 1px solid black;
+    float: left;
+}
+
+.key-item ~ span {
+    line-height: 100%;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
