@@ -21,25 +21,7 @@
         [time-1630] 0.3fr
         [time-1645] 0.3fr
         [time-1700] 0.3fr
-        [time-1715] 0.3fr
-        [time-1730] 0.3fr
-        [time-1745] 0.3fr
-        [time-1800] 0.3fr
-        [time-1815] 0.3fr
-        [time-1830] 0.3fr
-        [time-1845] 0.3fr
-        [time-1900] 0.3fr
-        [time-1915] 0.3fr
-        [time-1930] 0.3fr
-        [time-1945] 0.3fr
-        [time-2000] 0.3fr
-        [time-2015] 0.3fr
-        [time-2030] 0.3fr
-        [time-2045] 0.3fr
-        [time-2100] 0.3fr
-        [time-2115] 0.3fr
-        [time-2130] 0.3fr
-        [time-2145] 0.3fr;
+        [time-1715] 0.3fr;
         /* Note 1:
         Use 24hr time for gridline names for simplicity
         Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
