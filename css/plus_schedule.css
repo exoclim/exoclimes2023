@@ -6,7 +6,7 @@
 /*************************
  * GRID SCHEDULE LAYOUT
  *************************/
- .exoclimes-schedule {
+ .exoclimesplus-schedule {
     overflow-x: scroll;
     min-width: 10rem;
     display: grid;
