@@ -14,7 +14,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
-    color: #26428b;
+    color: #031B48;
 }
 
 h1.exoslam-title, h2.exoslam-title {
@@ -26,7 +26,7 @@ h1.exoslam-title, h2.exoslam-title {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 14pt;
-    color: #26428b;
+    color: #031B48;
 }
 
 b {
@@ -34,8 +34,8 @@ b {
 }
 
 .exoclimes-table tr {
-    border-bottom: 1px solid #26428b;
-    color: #26428b;
+    border-bottom: 1px solid #031B48;
+    color: #031B48;
 }
 
 .exoslam-logo-text {
@@ -47,7 +47,7 @@ b {
 }
 
 .blurred-background {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(5px);
 }
 
@@ -81,22 +81,22 @@ b {
 }
 
 .exoclimes-btn {
-    color: #26428b;
-    border: 1px solid #26428b;
+    color: #031B48;
+    border: 1px solid #031B48;
     border-radius: 0;
     padding: 1rem;
     font-size: 14pt;
 }
 
 .exoclimes-btn:hover {
-    background-color: #26428b;
+    background-color: #031B48;
 }
 
 .footer-copyright, .footer-copyright-exoslam {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 14pt;
-    color: #26428b;
+    color: #031B48;
     line-height: 10pt;
 }
 
