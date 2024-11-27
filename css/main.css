@@ -42,7 +42,7 @@ b {
 }
 
 .exoslam-logo-text {
-    font-family: 'FutureWave', sans-serif;
+    font-family: 'Good Times', sans-serif;
 }
 
 .nav-link.active {
@@ -68,7 +68,7 @@ b {
 }
 
 .exoslam-bg {
-    background: url("../img/exoclimesVII-bg.png");
+    background: url("../img/exoslam-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@ ul#header-menu {
 }
 
 .homepage-exoslam-logo {
-    font-family: 'FutureWave', sans-serif;
+    font-family: 'Good Times', sans-serif;
     font-size: 35pt;
     text-align: center;
     color: #031B48;
