@@ -10,6 +10,11 @@
 
 }
 
+@font-face {
+    font-family: 'Good Times Rg', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/good-times-2');
+}
+
 html, body {
     height: 100%;
 
@@ -42,7 +47,7 @@ b {
 }
 
 .exoslam-logo-text {
-    font-family: 'Good Times', sans-serif;
+    font-family: 'Good Times Rg', sans-serif;
 }
 
 .nav-link.active {
@@ -184,7 +189,7 @@ ul#header-menu {
 }
 
 .homepage-exoslam-logo {
-    font-family: 'Good Times', sans-serif;
+    font-family: 'Good Times Rg', sans-serif;
     font-size: 35pt;
     text-align: center;
     color: #031B48;
