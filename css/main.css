@@ -162,7 +162,7 @@ ul#header-menu {
 }
 
 .homepage-pre-title {
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Raleway', sans-serif;
 	font: inherit;
     font-weight: 200;
     font-size: 24pt;
@@ -171,7 +171,7 @@ ul#header-menu {
 }
 
 .homepage-exoclimes-logo {
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Good Times Rg', sans-serif; 
 	font: inherit;
     font-weight: 300;
     font-size: 52pt;
@@ -180,7 +180,7 @@ ul#header-menu {
 }
 
 .homepage-exoclimes-title-date {
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Raleway', sans-serif; 
 	font: inherit;
     font-weight: 400;
     font-size: 18pt;
