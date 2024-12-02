@@ -172,7 +172,6 @@ ul#header-menu {
 
 .homepage-exoclimes-logo {
     font-family: 'Good Times Rg', sans-serif; 
-	font: inherit;
     font-weight: 300;
     font-size: 52pt;
     text-align: center;
@@ -190,7 +189,7 @@ ul#header-menu {
 
 .homepage-exoslam-logo {
     font-family: 'Good Times Rg', sans-serif;
-    font-size: 35pt;
+    font-size: 52pt;
     text-align: center;
     color: #031B48;
 }
