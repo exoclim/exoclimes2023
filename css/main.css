@@ -64,6 +64,11 @@ b {
     backdrop-filter: blur(5px);
 }
 
+.blurred-background-titles-exoslam {
+	background-color: rgba(194, 73, 104, 0.8);
+    backdrop-filter: blur(5px);
+}
+
 .exoclimes-bg {
     background: url("../img/exoclimesVII-bg.png");
     background-size: cover;
