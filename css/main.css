@@ -285,8 +285,6 @@ ul#header-menu {
 /* Individual person card */
 .person-card {
     text-align: center;
-    border: 1px solid #ddd; /* Optional border */
-    border-radius: 8px; /* Rounded corners */
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     background-color: #f9f9f9;
