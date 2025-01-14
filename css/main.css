@@ -297,7 +297,7 @@ ul#header-menu {
     width: 100%;
     max-width: 150px; /* Limit image size */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make the image circular */
+    border-radius: 0; 
     margin-bottom: 10px;
 }
   
