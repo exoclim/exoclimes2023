@@ -277,11 +277,11 @@ ul#header-menu {
 .people-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-    gap: 20px; /* Space between images */
+    gap: 10px; /* Reduce space between images */
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto; /* Center the grid on the page */
-    text-align: center; /* Center the text under each image */
+    text-align: center; /* Center text under images */
 }
   
 /* Image styling */
@@ -290,6 +290,8 @@ ul#header-menu {
     max-width: 200px; /* Limit the width */
     height: 150px; /* Fixed height for rectangular shape */
     object-fit: cover; /* Ensure the image fits the rectangle without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a slight black shadow */
+    border-radius: 8px; /* Optional: Slightly rounded corners */
 }
   
 /* Text styling */
@@ -297,4 +299,5 @@ ul#header-menu {
     font-size: 14px;
     color: #333;
     margin-top: 8px;
+    text-align: center; /* Ensure text is centered under the image */
 }
