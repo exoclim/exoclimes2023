@@ -291,13 +291,24 @@ ul#header-menu {
     height: 250px; /* Fixed height for rectangular shape */
     object-fit: cover; /* Ensure the image fits the rectangle without distortion */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add a slight black shadow */
-    border-radius: 8px; /* Optional: Slightly rounded corners */
+    border-radius: 0; /* Optional: Slightly rounded corners */
+}
+
+.person-box {
+    width: 100%; /* Match the width of the parent container (image) */
+    max-width: 200px; /* Same max width as the image */
+    background-color: rgba(112, 165, 174, 0.8); 
+    padding: 10px; /* Add padding around the text */
+    margin-top: 8px; /* Space between the image and text box */
+    box-sizing: border-box; /* Include padding and border in width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
   
 /* Text styling */
 .person-description {
-    font-size: 14px;
-    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    color: #031B48;
     margin-top: 8px;
     text-align: center; /* Ensure text is centered under the image */
 }
