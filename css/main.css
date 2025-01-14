@@ -274,16 +274,21 @@ ul#header-menu {
 
 /* Images of people */
 /* Grid container for people */
-.people-grid div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.people-grid {
+    display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 images per row */
     gap: 10px; /* Reduce space between images */
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto; /* Center the grid on the page */
     text-align: center; /* Center text under images */
+}
+
+.people-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
 }
   
 /* Image styling */
