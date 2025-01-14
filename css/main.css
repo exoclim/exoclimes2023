@@ -88,8 +88,9 @@ b {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(255, 255, 255, 0.8); /* Adjust the opacity (0 to 1) */
+    background-color: rgb(255, 255, 255, 0.5); /* Adjust the opacity (0 to 1) */
     z-index: 1; /* Ensure overlay is on top of the background image */
+    height: 100vh
 }
   
 /* Content inside the background */
