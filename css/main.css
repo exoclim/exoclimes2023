@@ -307,7 +307,7 @@ ul#header-menu {
     max-width: 200px; /* Same max width as the image */
     background-color: rgba(112, 165, 174, 0.8); 
     padding: 10px; /* Add padding around the text */
-    margin-top: 8px; /* Space between the image and text box */
+    margin-top: 0; /* Space between the image and text box */
     box-sizing: border-box; /* Include padding and border in width */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -317,6 +317,6 @@ ul#header-menu {
     font-family: 'Raleway', sans-serif;
     font-size: 12pt;
     color: #031B48;
-    margin-top: 0;
+    margin-top: 8px;
     text-align: center; /* Ensure text is centered under the image */
 }
