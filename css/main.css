@@ -273,35 +273,28 @@ ul#header-menu {
 }
 
 /* Images of people */
+/* Grid container for people */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 20px; /* Space between images */
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto; /* Center the grid on the page */
-}
-  
-/* Individual person card */
-.person-card {
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    background-color: #f9f9f9;
+    text-align: center; /* Center the text under each image */
 }
   
 /* Image styling */
 .person-image {
-    width: 100%;
-    max-width: 150px; /* Limit image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0; 
-    margin-bottom: 10px;
+    width: 100%; /* Full width of the grid cell */
+    max-width: 200px; /* Limit the width */
+    height: 150px; /* Fixed height for rectangular shape */
+    object-fit: cover; /* Ensure the image fits the rectangle without distortion */
 }
   
-/* Description styling */
+/* Text styling */
 .person-description {
     font-size: 14px;
     color: #333;
+    margin-top: 8px;
 }
-
