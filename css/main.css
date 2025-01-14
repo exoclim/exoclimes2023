@@ -299,6 +299,7 @@ ul#header-menu {
     object-fit: cover; /* Ensure the image fits the rectangle without distortion */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add a slight black shadow */
     border-radius: 0; /* Optional: Slightly rounded corners */
+    margin-bottom: 0;
 }
 
 .person-box {
@@ -316,6 +317,6 @@ ul#header-menu {
     font-family: 'Raleway', sans-serif;
     font-size: 12pt;
     color: #031B48;
-    margin-top: 8px;
+    margin-top: 0;
     text-align: center; /* Ensure text is centered under the image */
 }
