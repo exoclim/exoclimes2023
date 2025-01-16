@@ -336,7 +336,7 @@ ul#header-menu {
 .person-box-exoslam {
     width: 100%; /* Match the width of the parent container (image) */
     max-width: 200px; /* Same max width as the image */
-    background-color: rgba(67, 26, 70, 0.8); 
+    background-color: rgba(67, 26, 70, 0.5); 
     padding: 10px; /* Add padding around the text */
     margin-top: 0; /* Space between the image and text box */
     box-sizing: border-box; /* Include padding and border in width */
@@ -351,3 +351,4 @@ ul#header-menu {
     margin-top: 8px;
     text-align: center; /* Ensure text is centered under the image */
 }
+
