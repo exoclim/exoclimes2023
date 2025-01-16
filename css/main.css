@@ -316,7 +316,7 @@ ul#header-menu {
 .person-image {
     width: 100%; /* Full width of the grid cell */
     max-width: 200px; /* Limit the width */
-    height: 240px; /* Fixed height for rectangular shape */
+    height: 250px; /* Fixed height for rectangular shape */
     object-fit: cover; /* Ensure the image fits the rectangle without distortion */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add a slight black shadow */
     border-radius: 0; /* Optional: Slightly rounded corners */
