@@ -63,8 +63,6 @@
                 </div>
             </div>
 
-            
-
             <head>
                 <title>Conference Schedule</title>
                 <style>
@@ -87,144 +85,147 @@
                     .contributed-talk {background-color: #FFE598;}
                 </style>
             </head>
-            <body>
-
-            <h1>Conference Schedule</h1>
-
-            <table>
-                <tr>
-                    <th>Time</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-                <tr>
-                    <td class="time">07:00 AM</td>
-                    <td class="meal">Breakfast</td>
-                    <td class="meal">Breakfast</td>
-                    <td class="meal">Breakfast</td>
-                    <td class="meal">Breakfast</td>
-                    <td class="meal">Breakfast</td>
-                </tr>
-                <tr>
-                    <td class="time">08:30 AM</td>
-                    <td class="meal">Opening Words</td>
-                    <td class="meal"></td>
-                    <td class="meal"></td>
-                    <td class="meal"></td>
-                    <td class="meal"></td>
-                </tr>
-                <tr>
-                    <td class="time">09:00 AM</td>
-                    <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Constraining Dynamics with Exocartography<br><em>Review Talk</em></td>
-                    <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('julianne-moses')"><b>Julianne Moses:</b><br>Atmospheric Chemistry in the Solar System & Links to Exoplanets<br><em>Review Talk</em></td>
-                    <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('elspeth-lee')"><b>Elspeth Lee:</b><br>Modelling Clouds in 3D<br><em>Review Talk</em></td>
-                    <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('anjali-piette')"><b>Anjali Piette:</b><br>Inferring Interior Properties from Atmospheric Characterization<br><em>Review Talk</em></td>
-                    <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape on Terrestrial Worlds in the Solar System<br><em>Review Talk</em></td>
-                </tr>
-                <tr>
-                    <td class="time">09:30 AM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="time">09:45 AM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="time">10:00 AM</td>
-                    <td class="contributed-talk" onclick="showModal('natalia-gomez')"><b>Natalia Lucia Oliveris Gomez: </b>Mapping the atmosphere of the BD binary system WISE 1049AB</td>
-                    <td class="contributed-talk" onclick="showModal('robin-baeyens')"><b>Robin Baeyens: </b>One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</td>
-                    <td class="contributed-talk" onclick="showModal('nishil-mehta')"><b>Nishil Mehta: </b>Combining JWST data and General Circulation Models for a 3D view of the warm Jupiter WASP-80b</td>
-                    <td class="contributed-talk" onclick="showModal('matthew-nixon')"><b>Mathhew Nixon: </b>Observable signatures of magma-atmosphere interactions in sub-Neptunes</td>
-                    <td class="contributed-talk" onclick="showModal('aaron-bello-arufe')"><b>Aaron Bello-Arufe: </b>Evidence for an atmosphere on the sub-Earth L98-59b</td>
-                </tr>
-            </table>
-
-            <div class="overlay" id="overlay"></div>
-
-            <div class="modal" id="nicolas-cowan">
-                <button class="close-btn" onclick="closeModal('nicolas-cowan')">Close</button>
-                <div class="modal-header">Constraining Dynamics with Exocartography</div>
-                <p>Abstract</p>
+            <div class="container-fluid">
+                <div class="blurred-background-titles p-3" style="margin-top: 80px;">
+                    <h2>Conference Schedule</h2>
+                </div>
+                <div class="blurred-background page-content p-5">
+                    <table>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td class="time">07:00 AM</td>
+                            <td class="meal">Breakfast</td>
+                            <td class="meal">Breakfast</td>
+                            <td class="meal">Breakfast</td>
+                            <td class="meal">Breakfast</td>
+                            <td class="meal">Breakfast</td>
+                        </tr>
+                        <tr>
+                            <td class="time">08:30 AM</td>
+                            <td class="meal">Opening Words</td>
+                            <td class="meal"></td>
+                            <td class="meal"></td>
+                            <td class="meal"></td>
+                            <td class="meal"></td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:00 AM</td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Constraining Dynamics with Exocartography<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('julianne-moses')"><b>Julianne Moses:</b><br>Atmospheric Chemistry in the Solar System & Links to Exoplanets<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('elspeth-lee')"><b>Elspeth Lee:</b><br>Modelling Clouds in 3D<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('anjali-piette')"><b>Anjali Piette:</b><br>Inferring Interior Properties from Atmospheric Characterization<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape on Terrestrial Worlds in the Solar System<br><em>Review Talk</em></td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:30 AM</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:45 AM</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:00 AM</td>
+                            <td class="contributed-talk" onclick="showModal('natalia-gomez')"><b>Natalia Lucia Oliveris Gomez: </b>Mapping the atmosphere of the BD binary system WISE 1049AB</td>
+                            <td class="contributed-talk" onclick="showModal('robin-baeyens')"><b>Robin Baeyens: </b>One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</td>
+                            <td class="contributed-talk" onclick="showModal('nishil-mehta')"><b>Nishil Mehta: </b>Combining JWST data and General Circulation Models for a 3D view of the warm Jupiter WASP-80b</td>
+                            <td class="contributed-talk" onclick="showModal('matthew-nixon')"><b>Mathhew Nixon: </b>Observable signatures of magma-atmosphere interactions in sub-Neptunes</td>
+                            <td class="contributed-talk" onclick="showModal('aaron-bello-arufe')"><b>Aaron Bello-Arufe: </b>Evidence for an atmosphere on the sub-Earth L98-59b</td>
+                        </tr>
+                    </table>
+        
+                    <div class="overlay" id="overlay"></div>
+        
+                    <div class="modal" id="nicolas-cowan">
+                        <button class="close-btn" onclick="closeModal('nicolas-cowan')">Close</button>
+                        <div class="modal-header">Constraining Dynamics with Exocartography</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="julianne-moses">
+                        <button class="close-btn" onclick="closeModal('julianne-moses')">Close</button>
+                        <div class="modal-header">Atmospheric Chemistry in the Solar System & Links to Exoplanets</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="elspeth-lee">
+                        <button class="close-btn" onclick="closeModal('elspeth-lee')">Close</button>
+                        <div class="modal-header">Modelling Clouds in 3D</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="anjali-piette">
+                        <button class="close-btn" onclick="closeModal('anjali-piette')">Close</button>
+                        <div class="modal-header">Inferring Interior Properties from Atmospheric Characterization</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="david-brain">
+                        <button class="close-btn" onclick="closeModal('david-brain')">Close</button>
+                        <div class="modal-header">Atmospheric Escape on Terrestrial Worlds in the Solar System</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="natalia-gomez">
+                        <button class="close-btn" onclick="closeModal('natalia-gomez')">Close</button>
+                        <div class="modal-header">Mapping the atmosphere of the BD binary system WISE 1049AB</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="robin-baeyens">
+                        <button class="close-btn" onclick="closeModal('robin-baeyens')">Close</button>
+                        <div class="modal-header">One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="nishil-mehta">
+                        <button class="close-btn" onclick="closeModal('nishil-mehta')">Close</button>
+                        <div class="modal-header">Combining JWST data and General Circulation Models for a 3D view of the warm Jupiter WASP-80b</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="matthew-nixon">
+                        <button class="close-btn" onclick="closeModal('matthew-nixon')">Close</button>
+                        <div class="modal-header">Observable signatures of magma-atmosphere interactions in sub-Neptunes</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <div class="modal" id="aaron-bello-arufe">
+                        <button class="close-btn" onclick="closeModal('aaron-bello-arufe')">Close</button>
+                        <div class="modal-header">Evidence for an atmosphere on the sub-Earth L98-59b</div>
+                        <p>Abstract</p>
+                    </div>
+        
+                    <script>
+                        function showModal(id) {
+                            document.getElementById(id).style.display = 'block';
+                            document.getElementById('overlay').style.display = 'block';
+                        }
+        
+                        function closeModal(id) {
+                            document.getElementById(id).style.display = 'none';
+                            document.getElementById('overlay').style.display = 'none';
+                        }
+                    </script>
+                </div>
             </div>
 
-            <div class="modal" id="julianne-moses">
-                <button class="close-btn" onclick="closeModal('julianne-moses')">Close</button>
-                <div class="modal-header">Atmospheric Chemistry in the Solar System & Links to Exoplanets</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="elspeth-lee">
-                <button class="close-btn" onclick="closeModal('elspeth-lee')">Close</button>
-                <div class="modal-header">Modelling Clouds in 3D</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="anjali-piette">
-                <button class="close-btn" onclick="closeModal('anjali-piette')">Close</button>
-                <div class="modal-header">Inferring Interior Properties from Atmospheric Characterization</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="david-brain">
-                <button class="close-btn" onclick="closeModal('david-brain')">Close</button>
-                <div class="modal-header">Atmospheric Escape on Terrestrial Worlds in the Solar System</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="natalia-gomez">
-                <button class="close-btn" onclick="closeModal('natalia-gomez')">Close</button>
-                <div class="modal-header">Mapping the atmosphere of the BD binary system WISE 1049AB</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="robin-baeyens">
-                <button class="close-btn" onclick="closeModal('robin-baeyens')">Close</button>
-                <div class="modal-header">One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="nishil-mehta">
-                <button class="close-btn" onclick="closeModal('nishil-mehta')">Close</button>
-                <div class="modal-header">Combining JWST data and General Circulation Models for a 3D view of the warm Jupiter WASP-80b</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="matthew-nixon">
-                <button class="close-btn" onclick="closeModal('matthew-nixon')">Close</button>
-                <div class="modal-header">Observable signatures of magma-atmosphere interactions in sub-Neptunes</div>
-                <p>Abstract</p>
-            </div>
-
-            <div class="modal" id="aaron-bello-arufe">
-                <button class="close-btn" onclick="closeModal('aaron-bello-arufe')">Close</button>
-                <div class="modal-header">Evidence for an atmosphere on the sub-Earth L98-59b</div>
-                <p>Abstract</p>
-            </div>
-
-            <script>
-                function showModal(id) {
-                    document.getElementById(id).style.display = 'block';
-                    document.getElementById('overlay').style.display = 'block';
-                }
-
-                function closeModal(id) {
-                    document.getElementById(id).style.display = 'none';
-                    document.getElementById('overlay').style.display = 'none';
-                }
-            </script>
-
-            </body>
+            
 
 
 
