@@ -83,6 +83,7 @@
                             height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
                     .meal {background-color: #FFCACA; }
                     .invited-talk {background-color: #BF9001; cursor: pointer; }
+                    .time {background-color: rgba(112, 165, 174, 0.8);}
                 </style>
             </head>
             <body>
@@ -99,7 +100,7 @@
                     <th>Friday</th>
                 </tr>
                 <tr>
-                    <td>07:00 AM</td>
+                    <td class="time">07:00 AM</td>
                     <td class="meal">Breakfast</td>
                     <td class="meal">Breakfast</td>
                     <td class="meal">Breakfast</td>
@@ -107,7 +108,7 @@
                     <td class="meal">Breakfast</td>
                 </tr>
                 <tr>
-                    <td>08:30 AM</td>
+                    <td class="time">08:30 AM</td>
                     <td class="meal">Opening Words</td>
                     <td class="meal"></td>
                     <td class="meal"></td>
@@ -115,29 +116,7 @@
                     <td class="meal"></td>
                 </tr>
                 <tr>
-                    <td rowspan="3" style="vertical-align: middle;">Lunch Break</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>09:00 AM</td>
+                    <td class="time">09:00 AM</td>
                     <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Constraining Dynamics with Exocartography<br>Review Talk</td>
                     <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('julianne-moses')"><b>Julianne Moses:</b><br>Atmospheric Chemistry in the Solar System & Links to Exoplanets<br>Review Talk</td>
                     <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('elspeth-lee')"><b>Elspeth Lee:</b><br>Modelling Clouds in 3D<br>Review Talk</td>
@@ -145,7 +124,7 @@
                     <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape on Terrestrial Worlds in the Solar System<br>Review Talk</td>
                 </tr>
                 <tr>
-                    <td>09:30 AM</td>
+                    <td class="time">09:30 AM</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -153,7 +132,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>09:45 AM</td>
+                    <td class="time">09:45 AM</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -165,31 +144,31 @@
             <div class="overlay" id="overlay"></div>
 
             <div class="modal" id="nicolas-cowan">
-                <button class="close-btn" onclick="closeModal('talk1')">Close</button>
+                <button class="close-btn" onclick="closeModal('nicolas-cowan')">Close</button>
                 <div class="modal-header">Constraining Dynamics</div>
                 <p>Abstract</p>
             </div>
 
             <div class="modal" id="julianne-moses">
-                <button class="close-btn" onclick="closeModal('talk2')">Close</button>
+                <button class="close-btn" onclick="closeModal('julianne-moses')">Close</button>
                 <div class="modal-header">Atmospheric Chemistry</div>
                 <p>Abstract</p>
             </div>
 
             <div class="modal" id="elspeth-lee">
-                <button class="close-btn" onclick="closeModal('talk3')">Close</button>
+                <button class="close-btn" onclick="closeModal('elspeth-lee')">Close</button>
                 <div class="modal-header">Modelling Clouds in 3D</div>
                 <p>Abstract</p>
             </div>
 
             <div class="modal" id="anjali-piette">
-                <button class="close-btn" onclick="closeModal('talk4')">Close</button>
+                <button class="close-btn" onclick="closeModal('anjali-piette')">Close</button>
                 <div class="modal-header">Inferring Interior Properties</div>
                 <p>Abstract</p>
             </div>
 
             <div class="modal" id="david-brain">
-                <button class="close-btn" onclick="closeModal('talk5')">Close</button>
+                <button class="close-btn" onclick="closeModal('david-brain')">Close</button>
                 <div class="modal-header">Atmospheric Escape</div>
                 <p>Abstract</p>
             </div>
