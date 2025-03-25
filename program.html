@@ -64,6 +64,7 @@
             </div>
 
             
+
             <head>
                 <title>Conference Schedule</title>
                 <style>
@@ -103,6 +104,22 @@
                     <td class="talk" onclick="showModal('talk4')">Anjali Piette:<br>Inferring Interior Properties</td>
                     <td class="talk" onclick="showModal('talk5')">David Brain:<br>Atmospheric Escape</td>
                 </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td class="talk" onclick="showModal('talk6')">Laura Kreidberg:<br>Exoplanet Atmospheres</td>
+                    <td></td>
+                    <td class="talk" onclick="showModal('talk7')">Mark Marley:<br>Brown Dwarf Observations</td>
+                    <td></td>
+                    <td class="talk" onclick="showModal('talk8')">Vivian Parmentier:<br>Cloud Formation Models</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM</td>
+                    <td></td>
+                    <td class="talk" onclick="showModal('talk9')">Caroline Morley:<br>Exoplanet Climate Models</td>
+                    <td></td>
+                    <td class="talk" onclick="showModal('talk10')">Kaitlyn Loftus:<br>Hydrological Cycles</td>
+                    <td></td>
+                </tr>
             </table>
 
             <div class="overlay" id="overlay"></div>
@@ -119,6 +136,24 @@
                 <p>A review of atmospheric chemistry mechanisms affecting exoplanet environments.</p>
             </div>
 
+            <div class="modal" id="talk3">
+                <button class="close-btn" onclick="closeModal('talk3')">Close</button>
+                <div class="modal-header">Modelling Clouds in 3D</div>
+                <p>Understanding cloud dynamics in exoplanet atmospheres using advanced 3D models.</p>
+            </div>
+
+            <div class="modal" id="talk4">
+                <button class="close-btn" onclick="closeModal('talk4')">Close</button>
+                <div class="modal-header">Inferring Interior Properties</div>
+                <p>Using observational data to infer the interior structure of exoplanets.</p>
+            </div>
+
+            <div class="modal" id="talk5">
+                <button class="close-btn" onclick="closeModal('talk5')">Close</button>
+                <div class="modal-header">Atmospheric Escape</div>
+                <p>Investigating atmospheric escape processes and their impact on exoplanet evolution.</p>
+            </div>
+
             <script>
                 function showModal(id) {
                     document.getElementById(id).style.display = 'block';
@@ -132,6 +167,8 @@
             </script>
 
             </body>
+
+
 
 
         </div>
