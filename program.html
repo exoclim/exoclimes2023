@@ -82,7 +82,7 @@
                     .meal {background-color: #FFCACA; }
                     .invited-talk {background-color: #BF9001; cursor: pointer; }
                     .time {background-color: rgba(112, 165, 174, 0.8);}
-                    .contributed-talk {background-color: #FFE598;}
+                    .contributed-talk {background-color: #FFE598; cursor: pointer; font-size: 14pt}
                 </style>
             </head>
             <div class="container-fluid">
@@ -125,19 +125,9 @@
                         </tr>
                         <tr>
                             <td class="time">09:30 AM</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td class="time">09:45 AM</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td class="time">10:00 AM</td>
@@ -173,6 +163,20 @@
                         </tr>
                         <tr>
                             <td class="time">11:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:15 AM</td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('keren-duer-milner')"><b>Keren Duer-Milner:</b><br>Atmospheric Dynamics of Solar System Giants<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('emily-deibert')"><b>Emily Deibert:</b><br>Probing Atmospheric Chemistry from High Resolution Spectroscopy<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('xinting-yu')"><b>Xinting Yu:</b><br>Measuring Aerosols Properties of Solar System Objects in the Lab<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('oliver-shorttle')"><b>Oliver Shorttle:</b><br>Petrology and Interior Geochemistry of Rocky Planets<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('leonardo-dos-santos')"><b>Leonardo Dos Santos:</b><br>Exoplanets Atmospheric Escape and Outflows <br><em>Review Talk</em></td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:30 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:45 AM</td>
                         </tr>
                     </table>
         
@@ -295,6 +299,36 @@
                     <div class="modal" id="mark-fortune">
                         <button class="close-btn" onclick="closeModal('mark-fortune')">Close</button>
                         <div class="modal-header">Constraining the atmosphere of the rocky exoplanet LHS-1140c and lessons for the Rocky Worlds DDT from analysing JWST/MIRI data at the pixel-level</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="keren-duer-milner">
+                        <button class="close-btn" onclick="closeModal('keren-duer-milner')">Close</button>
+                        <div class="modal-header">Atmospheric Dynamics of Solar System Giants</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="emily-deibert">
+                        <button class="close-btn" onclick="closeModal('emily-deibert')">Close</button>
+                        <div class="modal-header">Probing Atmospheric Chemistry from High Resolution Spectroscopy</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="xinting-yu">
+                        <button class="close-btn" onclick="closeModal('xinting-yu')">Close</button>
+                        <div class="modal-header">Measuring Aerosols Properties of Solar System Objects in the Lab</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="oliver-shorttle">
+                        <button class="close-btn" onclick="closeModal('oliver-shorttle')">Close</button>
+                        <div class="modal-header">Petrology and Interior Geochemistry of Rocky Planets</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="leonardo-dos-santos">
+                        <button class="close-btn" onclick="closeModal('leonardo-dos-santos')">Close</button>
+                        <div class="modal-header">Exoplanets Atmospheric Escape and Outflows </div>
                         <p>Abstract</p>
                     </div>
         
