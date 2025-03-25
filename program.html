@@ -63,6 +63,8 @@
                 </div>
             </div>
 
+            <!DOCTYPE html>
+
             <head>
                 <title>Conference Schedule</title>
                 <style>
@@ -121,9 +123,9 @@
                 </style>
             </head>
             <body>
-            
+
             <h1>Conference Schedule</h1>
-            
+
             <table>
                 <tr>
                     <th>Time</th>
@@ -150,46 +152,47 @@
                     <td class="talk" onclick="showModal('talk4')">Dr. Emily White<br>Solar Wind Effects</td>
                 </tr>
             </table>
-            
+
             <div class="overlay" id="overlay"></div>
-            
+
             <div class="modal" id="talk1">
                 <button class="close-btn" onclick="closeModal('talk1')">Close</button>
                 <div class="modal-header">Exploring the Magnetosphere</div>
                 <p>This talk will delve into the complex dynamics of Earth's magnetosphere, exploring recent findings and key challenges in the field.</p>
             </div>
-            
+
             <div class="modal" id="talk2">
                 <button class="close-btn" onclick="closeModal('talk2')">Close</button>
                 <div class="modal-header">Plasmasphere Dynamics</div>
                 <p>Discover the intricate interactions that shape the Earth's plasmasphere and their impact on space weather.</p>
             </div>
-            
+
             <div class="modal" id="talk3">
                 <button class="close-btn" onclick="closeModal('talk3')">Close</button>
                 <div class="modal-header">Radiation Belt Variability</div>
                 <p>An in-depth look at how Earth's radiation belts fluctuate and their impact on satellite operations.</p>
             </div>
-            
+
             <div class="modal" id="talk4">
                 <button class="close-btn" onclick="closeModal('talk4')">Close</button>
                 <div class="modal-header">Solar Wind Effects</div>
                 <p>This presentation will focus on how solar wind dynamics influence Earth's magnetic environment.</p>
             </div>
-            
+
             <script>
                 function showModal(id) {
                     document.getElementById(id).style.display = 'block';
                     document.getElementById('overlay').style.display = 'block';
                 }
-            
+
                 function closeModal(id) {
                     document.getElementById(id).style.display = 'none';
                     document.getElementById('overlay').style.display = 'none';
                 }
             </script>
-            
+
             </body>
+
         </div>
 
         <!-- FOOTER -->
