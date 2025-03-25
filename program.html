@@ -63,63 +63,23 @@
                 </div>
             </div>
 
-            <!DOCTYPE html>
-
+            
             <head>
                 <title>Conference Schedule</title>
                 <style>
-                    table {
-                        width: 100%;
-                        border-collapse: collapse;
-                    }
-                    th, td {
-                        border: 1px solid #ddd;
-                        padding: 10px;
-                        text-align: center;
-                    }
-                    th {
-                        background-color: #4CAF50;
-                        color: white;
-                    }
-                    .talk {
-                        background-color: #f0f8ff;
-                        cursor: pointer;
-                    }
-                    .modal {
-                        display: none;
-                        position: fixed;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 50%;
-                        background-color: #fff;
-                        border: 2px solid #4CAF50;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                        padding: 20px;
-                        z-index: 1000;
-                    }
-                    .modal-header {
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                    }
-                    .close-btn {
-                        background-color: #4CAF50;
-                        color: #fff;
-                        border: none;
-                        padding: 5px 10px;
-                        cursor: pointer;
-                        float: right;
-                    }
-                    .overlay {
-                        display: none;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: rgba(0, 0, 0, 0.5);
-                        z-index: 999;
-                    }
+                    table { width: 100%; border-collapse: collapse; }
+                    th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+                    th { background-color: #4CAF50; color: white; }
+                    .talk { background-color: #f0f8ff; cursor: pointer; }
+                    .modal { display: none; position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%); width: 50%;
+                            background-color: #fff; border: 2px solid #4CAF50;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; z-index: 1000; }
+                    .modal-header { font-weight: bold; margin-bottom: 10px; }
+                    .close-btn { background-color: #4CAF50; color: #fff; border: none; 
+                                padding: 5px 10px; cursor: pointer; float: right; }
+                    .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; 
+                            height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
                 </style>
             </head>
             <body>
@@ -136,20 +96,12 @@
                     <th>Friday</th>
                 </tr>
                 <tr>
-                    <td>10:00 AM - 11:00 AM</td>
-                    <td class="talk" onclick="showModal('talk1')">Dr. Jane Doe<br>Exploring the Magnetosphere</td>
-                    <td></td>
-                    <td class="talk" onclick="showModal('talk2')">Dr. John Smith<br>Plasmasphere Dynamics</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11:30 AM - 12:30 PM</td>
-                    <td></td>
-                    <td class="talk" onclick="showModal('talk3')">Prof. Alice Brown<br>Radiation Belt Variability</td>
-                    <td></td>
-                    <td></td>
-                    <td class="talk" onclick="showModal('talk4')">Dr. Emily White<br>Solar Wind Effects</td>
+                    <td>09:30 AM</td>
+                    <td class="talk" onclick="showModal('talk1')">Nicolas Cowan:<br>Constraining Dynamics</td>
+                    <td class="talk" onclick="showModal('talk2')">Julianne Moses:<br>Atmospheric Chemistry</td>
+                    <td class="talk" onclick="showModal('talk3')">Elspeth Lee:<br>Modelling Clouds in 3D</td>
+                    <td class="talk" onclick="showModal('talk4')">Anjali Piette:<br>Inferring Interior Properties</td>
+                    <td class="talk" onclick="showModal('talk5')">David Brain:<br>Atmospheric Escape</td>
                 </tr>
             </table>
 
@@ -157,26 +109,14 @@
 
             <div class="modal" id="talk1">
                 <button class="close-btn" onclick="closeModal('talk1')">Close</button>
-                <div class="modal-header">Exploring the Magnetosphere</div>
-                <p>This talk will delve into the complex dynamics of Earth's magnetosphere, exploring recent findings and key challenges in the field.</p>
+                <div class="modal-header">Constraining Dynamics</div>
+                <p>Exploring planetary atmospheres and their dynamic properties through observational data.</p>
             </div>
 
             <div class="modal" id="talk2">
                 <button class="close-btn" onclick="closeModal('talk2')">Close</button>
-                <div class="modal-header">Plasmasphere Dynamics</div>
-                <p>Discover the intricate interactions that shape the Earth's plasmasphere and their impact on space weather.</p>
-            </div>
-
-            <div class="modal" id="talk3">
-                <button class="close-btn" onclick="closeModal('talk3')">Close</button>
-                <div class="modal-header">Radiation Belt Variability</div>
-                <p>An in-depth look at how Earth's radiation belts fluctuate and their impact on satellite operations.</p>
-            </div>
-
-            <div class="modal" id="talk4">
-                <button class="close-btn" onclick="closeModal('talk4')">Close</button>
-                <div class="modal-header">Solar Wind Effects</div>
-                <p>This presentation will focus on how solar wind dynamics influence Earth's magnetic environment.</p>
+                <div class="modal-header">Atmospheric Chemistry</div>
+                <p>A review of atmospheric chemistry mechanisms affecting exoplanet environments.</p>
             </div>
 
             <script>
@@ -192,6 +132,7 @@
             </script>
 
             </body>
+
 
         </div>
 
