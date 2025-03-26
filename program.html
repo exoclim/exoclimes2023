@@ -78,11 +78,12 @@
                     .close-btn { background-color: #031B48; color: #fff; border: none; 
                                 padding: 5px 10px; cursor: pointer; float: right; }
                     .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; 
-                            height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+                            height: 50%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
                     .meal {background-color: #FFCACA; }
                     .invited-talk {background-color: #BF9001; cursor: pointer; }
                     .time {background-color: rgba(112, 165, 174, 0.8);}
-                    .contributed-talk {background-color: #FFE598; cursor: pointer; font-size: 14pt}
+                    .contributed-talk {background-color: #FFE598; cursor: pointer; font-size: 10pt}
+                    .remarks {background-color: #F6B26B;}
                 </style>
             </head>
             <div class="container-fluid">
@@ -102,18 +103,14 @@
                         <tr>
                             <td class="time">07:00 AM</td>
                             <td class="meal">Breakfast</td>
-                            <td class="meal">Breakfast</td>
-                            <td class="meal">Breakfast</td>
-                            <td class="meal">Breakfast</td>
-                            <td class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
                         </tr>
                         <tr>
                             <td class="time">08:30 AM</td>
-                            <td class="meal">Opening Words</td>
-                            <td class="meal"></td>
-                            <td class="meal"></td>
-                            <td class="meal"></td>
-                            <td class="meal"></td>
+                            <td class="remarks">Opening Remarks</td>
                         </tr>
                         <tr>
                             <td class="time">09:00 AM</td>
@@ -177,6 +174,30 @@
                         </tr>
                         <tr>
                             <td class="time">11:45 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:00 PM</td>
+                            <td class="contributed-talk" onclick="showModal('edouard-barrier')"><b>Edouard Barrier: </b>GCM simulations of temperature sub-Neptunes using a new convection scheme</td>
+                            <td class="contributed-talk" onclick="showModal('krishna-kanumalla')"><b>Krishna Kanumalla: </b>A song of ice and fire…and rocks!: Probing the rock-to-ice content of ultrahot Jupiters using IGRINS</td>
+                            <td class="contributed-talk" onclick="showModal('lori-huseby')"><b>Lory Huseby: </b>Optical Properties and Spectral Features of Sub-Neptune Water-World Hazes After UV Irradiation Through Laboratory Experiments</td>
+                            <td class="contributed-talk" onclick="showModal('esther-van-dijk')"><b>Esther van Dijk: </b>Retrieving interior properties of hot Jupiters with Love numbers and atmospheric measurements</td>
+                            <td class="contributed-talk" onclick="showModal('jaume-orell-miquel')"><b>Jaume Orell-Miquel: </b>Insights from the largest observational campaign on escaping atmospheres</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:15 PM</td>
+                            <td class="contributed-talk" onclick="showModal('robert-frazier')"><b>Robert Frazier: </b>WASP-121b Under the Gaze of JWST: How 3D Models Compare to its Spectroscopic Phase Curve</td>
+                            <td class="contributed-talk" onclick="showModal('linn-boldt-christmas')"><b>Linn Boldt-Christmas: </b>High-resolution spectroscopy studies of a cloudy and warm Neptune</td>
+                            <td class="contributed-talk" onclick="showModal('vignesh-nagpal')"><b>Vignesh Nagpal: </b>Clouds and Hazes on Sub-Neptunes: Insights from 2D Microphysical Modeling</td>
+                            <td class="contributed-talk" onclick="showModal('charles-edouard-boukare')"><b>Charles-Edouard Boukare: </b>Exploring the Internal Dynamics of Lava Exoplanets</td>
+                            <td class="contributed-talk" onclick="showModal('shreyas-vissapragada')"><b>Shreyas Vissapragada: </b>Towards Precise Constraints on Atmospheric Evolution for 50 Sub-Neptunes</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:30 PM</td>
+                            <td class="contributed-talk" onclick="showModal('fei-wang')"><b>Fei Wang: </b>Towards Time-Resolved Atmospheric Retrievals: Eigen-Spectra Inversion Techniques for Variable Brown Dwarfs and Exoplanet</td>
+                            <td class="contributed-talk" onclick="showModal('luke-parker')"><b>Luke Parker: </b>New regimes in exoplanet atmospheric characterisation with high-resolution spectroscopy</td>
+                            <td class="contributed-talk" onclick="showModal('giulia-roccetti')"><b>Giulia Roccetti: </b>Exploring Earth's Reflected Light Through 3D Radiative Transfer Simulations</td>
+                            <td class="contributed-talk" onclick="showModal('claire-guimond')"><b>Claire Guimond: </b>A geochemical view on the ubiquity of atmospheric CO2 on rocky exoplanets</td>
+                            <td class="contributed-talk" onclick="showModal('neale-gibson')"><b>Neale Gibson: </b>Pushing the limits of high-resolution Doppler spectroscopy for probing exoplanet atmospheres: towards 3D retrievals and temperate planets</td>
                         </tr>
                     </table>
         
@@ -328,7 +349,97 @@
 
                     <div class="modal" id="leonardo-dos-santos">
                         <button class="close-btn" onclick="closeModal('leonardo-dos-santos')">Close</button>
-                        <div class="modal-header">Exoplanets Atmospheric Escape and Outflows </div>
+                        <div class="modal-header">Exoplanets Atmospheric Escape and Outflows</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="edouard-barrier">
+                        <button class="close-btn" onclick="closeModal('edouard-barrier')">Close</button>
+                        <div class="modal-header">GCM simulations of temperature sub-Neptunes using a new convection scheme</div>
+                        <p>Abstract</p>
+                    </div>
+                    
+                    <div class="modal" id="krishna-kanumalla">
+                        <button class="close-btn" onclick="closeModal('krishna-kanumalla')">Close</button>
+                        <div class="modal-header">A song of ice and fire…and rocks!: Probing the rock-to-ice content of ultrahot Jupiters using IGRINS</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="lori-huseby">
+                        <button class="close-btn" onclick="closeModal('lori-huseby')">Close</button>
+                        <div class="modal-header">Optical Properties and Spectral Features of Sub-Neptune Water-World Hazes After UV Irradiation Through Laboratory Experiments</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="esther-van-dijk">
+                        <button class="close-btn" onclick="closeModal('esther-van-dijk')">Close</button>
+                        <div class="modal-header">Retrieving interior properties of hot Jupiters with Love numbers and atmospheric measurements</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="jaume-orell-miquel">
+                        <button class="close-btn" onclick="closeModal('jaume-orell-miquel')">Close</button>
+                        <div class="modal-header">Insights from the largest observational campaign on escaping atmospheres</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="robert-frazier">
+                        <button class="close-btn" onclick="closeModal('robert-frazier')">Close</button>
+                        <div class="modal-header">WASP-121b Under the Gaze of JWST: How 3D Models Compare to its Spectroscopic Phase Curve</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="linn-boldt-christmas">
+                        <button class="close-btn" onclick="closeModal('linn-boldt-christmas')">Close</button>
+                        <div class="modal-header">High-resolution spectroscopy studies of a cloudy and warm Neptune</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="vignesh-nagpal">
+                        <button class="close-btn" onclick="closeModal('vignesh-nagpal')">Close</button>
+                        <div class="modal-header">Clouds and Hazes on Sub-Neptunes: Insights from 2D Microphysical Modeling</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="charles-edouard-boukare">
+                        <button class="close-btn" onclick="closeModal('charles-edouard-boukare')">Close</button>
+                        <div class="modal-header">Exploring the Internal Dynamics of Lava Exoplanets</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="shreyas-vissapragada">
+                        <button class="close-btn" onclick="closeModal('shreyas-vissapragada')">Close</button>
+                        <div class="modal-header">Towards Precise Constraints on Atmospheric Evolution for 50 Sub-Neptunes</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="fei-wang">
+                        <button class="close-btn" onclick="closeModal('fei-wang')">Close</button>
+                        <div class="modal-header">Towards Time-Resolved Atmospheric Retrievals: Eigen-Spectra Inversion Techniques for Variable Brown Dwarfs and Exoplanet</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="luke-parker">
+                        <button class="close-btn" onclick="closeModal('luke-parker')">Close</button>
+                        <div class="modal-header">New regimes in exoplanet atmospheric characterisation with high-resolution spectroscopy</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="giulia-roccetti">
+                        <button class="close-btn" onclick="closeModal('giulia-roccetti')">Close</button>
+                        <div class="modal-header">Exploring Earth's Reflected Light Through 3D Radiative Transfer Simulations</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="claire-guimond">
+                        <button class="close-btn" onclick="closeModal('claire-guimond')">Close</button>
+                        <div class="modal-header">A geochemical view on the ubiquity of atmospheric CO2 on rocky exoplanets</div>
+                        <p>Abstract</p>
+                    </div>
+
+                    <div class="modal" id="neale-gibson">
+                        <button class="close-btn" onclick="closeModal('neale-gibson')">Close</button>
+                        <div class="modal-header">Pushing the limits of high-resolution Doppler spectroscopy for probing exoplanet atmospheres: towards 3D retrievals and temperate planets</div>
                         <p>Abstract</p>
                     </div>
         
