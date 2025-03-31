@@ -18,6 +18,10 @@
         <!-- Exoxclimes VI stylesheet -->
         <link href="../css/main.css" rel="stylesheet" type="text/css">
 
+        <!-- Map library-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
     </head>
 
     <body class="exoclimes-bg">
@@ -109,11 +113,23 @@
                                 of IREx's primary areas of research focus. The Université de Montréal campus, nestled on the slopes of Mont-Royal away from the downtown hustle, is a great setting for the Exoclimes conference, located in one of the 
                                 most welcoming North American cities, especially for pedestrians and cyclists during the lively summer months. With art and music festivals in the summer, Montréal's diverse culture and Québécois charm add a special touch to the conference experience. 
                                 Participants will have a large variety of things to do while getting to know other attendees, from outdoor activities such as Mont-Royal hikes, city biking, relaxing on terraces or free outdoor events, to indoor activities 
-                                such as museum visits and access to the university's sports facilities.</p>
-
+                                such as museum visits and access to the university's sports facilities. The conference will be hosted at the <b>Jean Coutu Pavillon:</b></p>
+                                <div id="map" style="height: 400px; width: 100%;"></div>
+                                <script>
+                                    var map = L.map('map').setView([45.4215, -75.6972], 15); // Replace with actual lat/lng
+                                
+                                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                        attribution: '&copy; OpenStreetMap contributors'
+                                    }).addTo(map);
+                                
+                                    L.marker([45.50054602829306, -73.61470989455988]).addTo(map)
+                                        .bindPopup("Conference Venue")
+                                        .openPopup();
+                                </script>
                         </div>
                     </div>
                  </div>
+
             </div>
 
             <!-- FOOTER -->
