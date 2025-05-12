@@ -161,6 +161,122 @@
                     </div>
                 </div>
 
+                <head>
+                    <title>ExoSLAM Schedule</title>
+                    <style>
+                        table { width: 100%; border-collapse: collapse; }
+                        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+                        th { background-color: rgba(112, 165, 174, 0.8); color: white; }
+                        .talk { background-color: #f0f8ff; cursor: pointer; }
+                        .modal { display: none; position: absolute; top: 50%; left: 50%;
+                                transform: translate(-50%, -50%); width: 50%;
+                                background-color: #fff; border: 2px solid #031B48;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; z-index: 1000; max-height: 60vh; }
+                        .modal-header { font-weight: bold; margin-bottom: 10px; }
+                        .close-btn { background-color: rgba(112, 165, 174, 0.8); color: #fff; border: none; 
+                                    padding: 5px 10px; cursor: pointer; float: right; }
+                        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; 
+                                height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+                        .meal {background-color: #FFCACA; }
+                        .invited-talk {background-color: #BF9001; cursor: pointer; }
+                        .time {background-color: rgba(112, 165, 174, 0.8);}
+                        .contributed-talk {background-color: #FFE598; cursor: pointer; font-size: 10pt}
+                        .remarks {background-color: #F6B26B;}
+                        .free-time {background-color: #D9EAD3;}
+                        .departure {background-color: #D9D9D9;}
+                        .buffer {background-color: #B7B7B7;}
+                        .gala-dinner {background-color: #dd8484;}
+                        .mini-lecture {background-color: #C9DBF9;}
+                        .tutorial {background-color: #D9EBD3;}
+                    </style>
+                </head>
+
+                <div class="container-fluid">
+                    <div class="blurred-background-titles p-3" style="margin-top: 80px;">
+                        <h2>ExoSLAM Schedule</h2>
+                    </div>
+                    <div class="blurred-background page-content p-5">
+                        <table>
+                            <tr>
+                                <th style="color: #031B48">Time</th>
+                                <th style="color: #031B48">Thursdsay 3 July</th>
+                                <th style="color: #031B48">Friday 4 July</th>
+                                <th style="color: #031B48">Saturday 5 July</th>
+                            </tr>
+                            <tr>
+                                <td class="time">08:00 AM</td>
+                                <td class="buffer">Breakfast & Coffee</td>
+                                <td class="buffer">Breakfast & Coffee</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:00 AM</td>
+                                <td rowspan="2" style="vertical-align: middle;" class="talk">Welcome and Introduction<br><em>Joost Wardenier</em></td>
+                                <td rowspan="3" style="vertical-align: middle;" class="mini-lecture">Lecture: Radiative transfer in a nutshell<br><em>Érika Le Bourdais & Joost Wardenier</em></td>
+                                <td rowspan="4" style="vertical-align: middle;" class="buffer">Breakfast & Coffee</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:30 AM</td>
+                                <td rowspan="3" style="vertical-align: middle;" class="mini-lecture">Mini-lectures, part I: <ul>
+                                    <li>Transmission spectroscopy</li>
+                                    <li>Emission spectroscopy and eclipse mapping</li>
+                                    <li>Phase curves and reflected light</li>
+                                </ul><br><em>Pierre-Alexis Roy, Louis-Phillipe Coulombe, & Jared Splinter</em></td>
+                            </tr>
+                            <tr>
+                                <td class="time">09:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00 AM</td>
+                                <td rowspan="2" style="vertical-align: middle;" class="mini-lecture">Lecture: Introduction to atmospheric retrievals, part I<br><em>Caroline Piaulet-Ghorayeb & Luis Welbanks</em></td>
+                                <td rowspan="4" style="vertical-align: middle;" class="mini-lecture">Mini-lectures, part I<br><ul>
+                                    <li>Introduction to machine learning</li>
+                                    <li>Machine learning for atmospheric retrievals</li>
+                                    <li>Inference problems in gravitational lensing</li>
+                                </ul><br><em>Salma Salhi, Chloe Fisher, & Ronan Legin</em></td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:15 AM</td>
+                                <td class="talk">Buffer for questions and discussion</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:30 AM</td>
+                                <td rowspan="2" style="vertical-align: middle;" class="buffer">Coffee break</td>
+                                <td rowspan="2" style="vertical-align: middle;" class="buffer">Coffee break</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:45 AM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <script>
+                    // function showModal(id) {
+                    //     document.getElementById(id).style.display = 'block';
+                    //     document.getElementById('overlay').style.display = 'block';
+                    // }
+                    function showModal(id) {
+                        const modal = document.getElementById(id);
+                        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                        const viewportHeight = window.innerHeight;
+
+                        modal.style.top = `${scrollTop + viewportHeight / 2}px`;
+                        modal.style.left = '50%';
+                        modal.style.transform = 'translate(-50%, -50%)';
+
+                        modal.style.display = 'block';
+                        document.getElementById('overlay').style.display = 'block';
+                    }
+    
+                    function closeModal(id) {
+                        document.getElementById(id).style.display = 'none';
+                        document.getElementById('overlay').style.display = 'none';
+                    }
+                </script>
+
                 <div class="row g3">
                     <div class="col mt-5">
                         <div class="blurred-background-titles-exoslam p-3" style="color: rgb(67, 26, 70);">
