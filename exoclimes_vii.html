@@ -211,6 +211,12 @@
                                     <p class="person-description" onclick="showModal('elspeth-lee')"><b>Elspeth Lee</b><br>Modelling Clouds in 3D</p>
                                 </div>
                             </div>
+                            <div>
+                                <img src="img/nicolas_cowan_talk.jpeg" alt="Person 2" class="person-image">
+                                <div class="person-box">
+                                    <p class="person-description" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan</b><br>Observing Atmospheric Dynamics on Exoplanets</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,8 +240,29 @@
                     </div>
 
                     <div class="tab-content" id="elspeth-lee-bio" style="display: none;">
-                        <div class="modal-header">About Elspeth</div>
+                        <div class="modal-header">About Elspeth Lee</div>
                         <p>Elspeth Lee is currently a postdoctorate Bernoulli Fellow at the Center of Space and Habitability (CSH), University of Bern, Switzerland. Her primary research investigates complex feedback interactions between clouds, chemistry, radiative-transfer and dynamics using 3D atmospheric models. She has developed several 3D capable models such as gCMCRT (Monte Carlo radiative-transfer), mini-chem (kinetic chemistry) and mini-cloud (cloud formation microphysics).</p>
+                    </div>
+                </div>
+
+                <div class="modal" id="nicolas-cowan">
+                    <button class="close-btn" onclick="closeModal('nicolas-cowan')">Close</button>
+
+                    <!-- Tab Buttons -->
+                    <div class="tab-buttons">
+                        <button onclick="openTab('nicolas-cowan', 'abstract')" class="tab active">Abstract</button>
+                        <button onclick="openTab('nicolas-cowan', 'bio')" class="tab">Biography</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div class="tab-content" id="nicolas-cowan-abstract">
+                        <div class="modal-header">Observing Atmospheric Dynamics on Exoplanets</div>
+                        <p>The great distance to exoplanets makes it impossible to resolve their disk with current or near-term technology. It is still possible, however, to deduce spatial inhomogeneities in exoplanets provided that different regions are visible at different times—this can be due to rotation, orbital motion, or occultations by a star, planet, or moon. We can also monitor atmospheric time-variability due to seasons and weather.  Finally, winds can be directly probed via Doppler-shifted atmospheric lines. I will review techniques for mapping the atmospheric dynamics of exoplanets at low and high spectral resolution for synchronously rotating planets, eccentric planets, those on long-period orbits, and free-floating planets.  I will outline how we constrain the wind direction, wind speed, vertical mixing, atmospheric variability, cloud and chemical inhomogeneities. </p>
+                    </div>
+
+                    <div class="tab-content" id="nicolas-cowan-bio" style="display: none;">
+                        <div class="modal-header">About Nicolas Cowan</div>
+                        <p>Nicolas Cowan is the Canada Research Chair in Planetary Climate and an Associate Professor in the departments of Physics and of Earth & Planetary Sciences at McGill University. He is a member of the Trottier Space Institute and l’Institut de recherche sur les exoplanètes. Cowan uses telescopes and maths to study the climates of exoplanets. He has pioneered remote sensing techniques to map the atmospheres and surfaces of these distant planets, bringing them into view as multi-dimensional worlds unto themselves.</p>
                     </div>
                 </div>
 
@@ -254,6 +281,7 @@
                     }
     
                     function closeModal(id) {
+                        console.log("Closing modal:", id);  // Add this
                         document.getElementById(id).style.display = 'none';
                         document.getElementById('overlay').style.display = 'none';
                     }
