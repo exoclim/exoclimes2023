@@ -302,13 +302,14 @@
                         event.target.classList.add('active');
                     }
 
-                    document.addEventListener('click', function(event) {
-                        // Check if the clicked element has the class 'close-btn'
-                        if (event.target.classList.contains('close-btn')) {
-                            const modalId = event.target.getAttribute('data-modal-id');
-                            if (modalId) {
-                                closeModal(modalId);
-                            }
+                    // Close modal when clicking the overlay
+                    window.addEventListener('click', function(event) {
+                        const overlay = document.getElementById('overlay');
+                        const modals = document.querySelectorAll('.modal');
+
+                        if (event.target === overlay) {
+                            overlay.style.display = 'none';
+                            modals.forEach(modal => modal.style.display = 'none');
                         }
                     });
                 </script>
