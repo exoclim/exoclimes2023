@@ -255,18 +255,18 @@
                         document.getElementById('overlay').style.display = 'none';
                     }
 
-                    function openTab(modalId, tabName) {
+                    function openTab(id, tabName) {
                         // Hide all tab contents
-                        document.querySelectorAll(`#${modalId} .tab-content`).forEach(el => el.style.display = 'none');
+                        document.querySelectorAll(`#${id} .tab-content`).forEach(el => el.style.display = 'none');
 
                         // Remove 'active' class from all tabs
-                        document.querySelectorAll(`#${modalId} .tab`).forEach(el => el.classList.remove('active'));
+                        document.querySelectorAll(`#${id} .tab`).forEach(el => el.classList.remove('active'));
 
                         // Show the selected tab content and mark button as active
-                        document.getElementById(`${modalId}-${tabName}`).style.display = 'block';
+                        document.getElementById(`${id}-${tabName}`).style.display = 'block';
                         event.target.classList.add('active');
                     }
-            </script>
+                </script>
                  
                 <div class="row g3">
                     <div class="col mt-5">
