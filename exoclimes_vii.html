@@ -248,7 +248,7 @@
                 </div>
 
                 <div class="modal" id="nicolas-cowan">
-                    <button class="close-btn" onclick="closeModal('nicolas-cowan')">Close</button>
+                    <button class="close-btn" data-modal-id="nicolas-cowan">Close</button>
 
                     <!-- Tab Buttons -->
                     <div class="tab-buttons">
@@ -299,6 +299,16 @@
                         document.getElementById(`${id}-${tabName}`).style.display = 'block';
                         event.target.classList.add('active');
                     }
+
+                    document.addEventListener('click', function(event) {
+                        // Check if the clicked element has the class 'close-btn'
+                        if (event.target.classList.contains('close-btn')) {
+                            const modalId = event.target.getAttribute('data-modal-id');
+                            if (modalId) {
+                                closeModal(modalId);
+                            }
+                        }
+                    });
                 </script>
                  
                 <div class="row g3">
