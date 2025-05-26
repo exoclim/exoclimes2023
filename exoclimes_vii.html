@@ -143,6 +143,48 @@
                     </div>
                 </div>
 
+                <head>
+                    <style>
+                        table { width: 100%; border-collapse: collapse; }
+                        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+                        th { background-color: rgba(112, 165, 174, 0.8); color: white; }
+                        .talk { background-color: #f0f8ff; cursor: pointer; }
+                        .modal { display: none; position: absolute; top: 50%; left: 50%;
+                                transform: translate(-50%, -50%); width: 50%;
+                                background-color: #fff; border: 2px solid #031B48;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; z-index: 1000; max-height: 60vh; }
+                        .modal-header { font-weight: bold; margin-bottom: 10px; }
+                        .close-btn { background-color: rgba(112, 165, 174, 0.8); color: #fff; border: none; 
+                                    padding: 5px 10px; cursor: pointer; float: right; }
+                        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; 
+                                height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+                        .meal {background-color: #FFCACA; }
+                        .invited-talk {background-color: #BF9001; cursor: pointer; }
+                        .time {background-color: rgba(112, 165, 174, 0.8);}
+                        .contributed-talk {background-color: #FFE598; cursor: pointer; font-size: 10pt}
+                        .remarks {background-color: #F6B26B;}
+                        .free-time {background-color: #D9EAD3;}
+                        .departure {background-color: #D9D9D9;}
+                        .buffer {background-color: #B7B7B7;}
+                        .gala-dinner {background-color: #dd8484;}
+                        .tab-buttons {margin-bottom: 10px;}
+                        .tab {
+                            background-color: #eee;
+                            border: none;
+                            padding: 8px 16px;
+                            cursor: pointer;
+                            margin-right: 5px;
+                        }
+                        .tab.active {
+                            background-color: #4CAF50;
+                            color: white;
+                        }
+                        .tab-content {
+                            display: block;
+                        }
+                    </style>
+                </head>
+
                 <div class="row g3">
                     <div class="col mt-5">
                         <div class="blurred-background p-5" style="margin-top: 30px;">
@@ -156,135 +198,75 @@
                     </div>
                 </div>                    
                 
-                <!-- <div class="row g3">
+                <div class="row g3">
                     <div class="col mt-5">
                         <div class="blurred-background-titles p-3" style="text-align: center;">
-                            <h2>Exoclimes VII Local Organising Committee</h2>
+                            <h2>Invited speakers</h2>
+                            Click on each person's profile to view their bio and abstract!
                         </div>
                         <div class="people-grid">
                             <div>
-                                <img src="img/allart-romain.webp" alt="Person 1" class="person-image">
+                                <img src="img/blank_person.png" alt="Person 1" class="person-image">
                                 <div class="person-box">
-                                    <p class="person-description"><b>Romain Allart (Co-chair)</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Baron_Frederique.webp" alt="Person 2" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Frédérique Baron (Co-chair)</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Dang-Portrait.jpeg" alt="Person 3" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Lisa Dang (Co-chair)</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Doyon_Rene.webp" alt="Person 4" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>René Doyon (Co-chair)</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/loic_albert.webp" alt="Person 5" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Loïc Albert</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Bjorn-Benneke.webp" alt="Person 6" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Björn Benneke</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Darveau-Bernier_Antoine.webp" alt="Person 7" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Antoine Darveau-Bernier</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/ClemenceFontanive.webp" alt="Person 8" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Clémence Fontanive</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Herath_Mehesh.webp" alt="Person 9" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Mahesh Herath</b><br>McGill University</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Krishnamurthy_Vigneshwaran.webp" alt="Person 10" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Vigneshwaran Krishnamurthy</b><br>McGill University</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Lafreniere_David.webp" alt="Person 11" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>David Lafrenière</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/ErikaLeBourdais.webp" alt="Person 12" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Érika Le Bourdais</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Naud_Marie.webp" alt="Person 13" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Marie-Eve Naud</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Ouellette_Nathalie.webp" alt="Person 14" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Nathalie Ouellette</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Rowe_Jason.webp" alt="Person 15" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Jason Rowe</b><br>Bishop's University</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Roy_Pierre-Alexis.webp" alt="Person 16" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Pierre-Alexis Roy</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Salhi_Salma.webp" alt="Person 17" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Salma Salhi</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Jared.jpg" alt="Person 18" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Jared Splinter</b><br>McGill University</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Vandal_Thomas.webp" alt="Person 19" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Thomas Vandal</b><br>Université de Montréal</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/Wardenier_Joost.webp" alt="Person 20" class="person-image">
-                                <div class="person-box">
-                                    <p class="person-description"><b>Joost Wardenier</b><br>Université de Montréal</p>
+                                    <p class="person-description" onclick="showModal('test')"><b>test</b><br>Université de Montréal</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
+                <div class="modal" id="test">
+                    <button class="close-btn" onclick="closeModal('test')">Close</button>
+
+                    <!-- Tab Buttons -->
+                    <div class="tab-buttons">
+                        <button onclick="openTab('test', 'abstract')" class="tab active">Abstract</button>
+                        <button onclick="openTab('test', 'bio')" class="tab">Biography</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div class="tab-content" id="test-abstract">
+                        <div class="modal-header">Talk abstract</div>
+                        <p>stuff</p>
+                    </div>
+
+                    <div class="tab-content" id="test-bio" style="display: none;">
+                        <div class="modal-header">About test speaker</div>
+                        <p>stuff</p>
+                    </div>
+                </div>
+
+                <script>
+                    function showModal(id) {
+                        const modal = document.getElementById(id);
+                        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                        const viewportHeight = window.innerHeight;
+
+                        modal.style.top = `${scrollTop + viewportHeight / 2}px`;
+                        modal.style.left = '50%';
+                        modal.style.transform = 'translate(-50%, -50%)';
+
+                        modal.style.display = 'block';
+                        document.getElementById('overlay').style.display = 'block';
+                    }
+    
+                    function closeModal(id) {
+                        document.getElementById(id).style.display = 'none';
+                        document.getElementById('overlay').style.display = 'none';
+                    }
+
+                    function openTab(modalId, tabName) {
+                        // Hide all tab contents
+                        document.querySelectorAll(`#${modalId} .tab-content`).forEach(el => el.style.display = 'none');
+
+                        // Remove 'active' class from all tabs
+                        document.querySelectorAll(`#${modalId} .tab`).forEach(el => el.classList.remove('active'));
+
+                        // Show the selected tab content and mark button as active
+                        document.getElementById(`${modalId}-${tabName}`).style.display = 'block';
+                        event.target.classList.add('active');
+                    }
+            </script>
                  
                 <div class="row g3">
                     <div class="col mt-5">
