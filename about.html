@@ -22,6 +22,21 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .imgbox {
+                display: grid;
+                height: 100%;
+            }
+            .center-fit {
+                max-width: 100%;
+                max-height: 100vh;
+                margin: auto;
+            }
+        </style>
     </head>
 
     <body class="exoclimes-bg">
@@ -183,7 +198,10 @@
                             </p>
 
                             <p style="margin-top: 0; font-size: 14pt; font-family: 'Raleway', sans-serif;"><b>Getting to the Jean-Coutu building</b><br>
-                            <img src="/img/getting_to_jean_coutu.png" alt="Getting to Jean-Coutu" width="200" height="600" class="center"><br>
+                            <!-- <img src="/img/getting_to_jean_coutu.png" alt="Getting to Jean-Coutu" width="200" height="600" class="center"><br> -->
+                            <div class="imgbox">
+                                <img class="center-fit" src='/img/getting_to_jean_coutu.png'>
+                            </div><br>
                             The Jean-Coutu building where the conference is taking place is located to the East of the main UdeM campus.
                             To get there from ZUM, walk east towards Chemin de Polytechnique.
                             To get there from the metro, take the escalator towards Roger gaudry and walk East from there
