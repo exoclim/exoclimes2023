@@ -204,11 +204,15 @@
                         flex: 0 0 90px;
                         background-color: rgba(194, 73, 104, 0.8); /* matching your .time header color */
                         border-radius: 8px;
-                        padding: 8px;
+                        padding: 5px;
                         box-sizing: border-box;
                         font-weight: bold;
                         text-align: center;
                         color: white;
+                        position: sticky;
+                        border-right: 1px solid #ddd;
+                        left: 0;
+                        z-index: 2;
                         }
 
                         .schedule-day {
@@ -244,6 +248,12 @@
                         text-align: center;
                         padding: 10px;
                         box-sizing: border-box;
+                        }
+
+                        /* Day columns */
+                        .day-column {
+                        flex: 0 0 250px;
+                        min-width: 250px;
                         }
 
                         .time {
