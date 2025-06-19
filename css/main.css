@@ -15,6 +15,17 @@
     src: url('https://fonts.cdnfonts.com/css/good-times-2');
 } */
 
+.table-responsive-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive-wrapper table {
+  min-width: 600px; /* Adjust depending on your table */
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .center {
   display: block;
   margin-left: auto;
