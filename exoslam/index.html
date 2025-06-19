@@ -184,10 +184,12 @@
                         /* Flex-based mobile-friendly conference schedule */
                         .schedule-container {
                         display: flex;
-                        flex-wrap: nowrap;
-                        overflow-x: auto;
-                        gap: 15px;
-                        padding: 10px;
+                        width: 100%;          /* span entire parent width */
+                        max-width: 100%;      /* avoid shrinking due to max-width */
+                        box-sizing: border-box; 
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1rem;
                         font-family: 'Raleway', sans-serif;
                         }
 
