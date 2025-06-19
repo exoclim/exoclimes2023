@@ -222,59 +222,43 @@
                         border-radius: 5px;
                         }
 
-                        .schedule-block.time {
+                        .schedule-block {
+                        height: 48px; /* height for 1 time block */
+                        border: 1px solid #ccc;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                        color: #031B48;
+                        text-align: center;
+                        padding: 5px;
+                        box-sizing: border-box;
+                        }
+
+                        .time {
                         background-color: rgba(194, 73, 104, 0.8); /* same as your .time */
                         color: white;
                         font-weight: 700;
-                        cursor: default;
-                        margin-bottom: 10px;
-                        padding: 8px;
-                        border-radius: 6px;
-                        box-shadow: none;
-                        text-align: center;
                         }
 
-                        .schedule-block.buffer {
-                        background-color: #B7B7B7; /* same as your .buffer */
-                        color: black;
-                        margin-bottom: 10px;
-                        padding: 8px;
-                        border-radius: 6px;
-                        cursor: default;
-                        }
-
-                        .schedule-block.contributed-talk {
-                        background-color: #FFE598; /* your contributed-talk */
-                        color: black;
-                        margin-bottom: 10px;
-                        padding: 8px;
-                        border-radius: 6px;
-                        cursor: pointer;
-                        }
-
-                        .schedule-block.blank {
+                        .blank {
                         background: transparent;
                         box-shadow: none;
                         margin-bottom: 0;
                         height: 48px; /* keeps layout alignment */
                         }
 
-                        .schedule-block.mini-lecture {
-                        background-color: #C9DBF9; /* your mini-lecture */
-                        color: black;
-                        margin-bottom: 10px;
-                        padding: 8px;
-                        border-radius: 6px;
-                        cursor: pointer;
+                        /* Span multiple time blocks */
+                        .span-2 {
+                        height: calc(48px * 2); /* 2 blocks + 1 gap */
                         }
 
-                        .schedule-block.tutorial {
-                        background-color: #D9EBD3; /* your tutorial */
-                        color: black;
-                        margin-bottom: 10px;
-                        padding: 8px;
-                        border-radius: 6px;
-                        cursor: pointer;
+                        .span-3 {
+                        height: calc(48px * 3); /* 3 blocks + 2 gaps */
+                        }
+
+                        .span-4 {
+                        height: calc(48px * 4); /* 3 blocks + 2 gaps */
                         }
 
                         /* Responsive tweaks */
@@ -341,7 +325,7 @@
                             <b>Welcome and Introduction</b><br><em>Joost Wardenier</em>
                             </div>
                             <div class="schedule-block blank"></div>
-                            <div class="schedule-block mini-lecture">
+                            <div class="schedule-block mini-lecture span-4">
                             <b>Mini-lectures, part I:</b>
                             <ul>
                                 <li>Transmission spectroscopy</li>
