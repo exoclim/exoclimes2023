@@ -373,16 +373,14 @@ ul#header-menu {
     width: 100%;
 }
 
-/* Images of people */
-/* Grid container for people */
-.people-grid {
+/* .people-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-    gap: 10px; /* Reduce space between images */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Center the grid on the page */
-    text-align: center; /* Center text under images */
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .people-grid div {
@@ -392,43 +390,118 @@ ul#header-menu {
     width: 100%
 }
   
-/* Image styling */
 .person-image {
-    width: 100%; /* Full width of the grid cell */
-    max-width: 200px; /* Limit the width */
-    height: 250px; /* Fixed height for rectangular shape */
-    object-fit: cover; /* Ensure the image fits the rectangle without distortion */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add a slight black shadow */
-    border-radius: 0; /* Optional: Slightly rounded corners */
+    width: 100%;
+    max-width: 200px; 
+    height: 250px;
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    border-radius: 0; 
     margin-bottom: 0;
 }
 
 .person-box {
-    width: 100%; /* Match the width of the parent container (image) */
-    max-width: 200px; /* Same max width as the image */
+    width: 100%; 
+    max-width: 200px; 
     background-color: rgba(112, 165, 174, 0.8); 
-    padding: 10px; /* Add padding around the text */
-    margin-top: 0; /* Space between the image and text box */
-    box-sizing: border-box; /* Include padding and border in width */
+    padding: 10px; 
+    margin-top: 0;
+    box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .person-box-exoslam {
-    width: 100%; /* Match the width of the parent container (image) */
-    max-width: 200px; /* Same max width as the image */
+    width: 100%; 
+    max-width: 200px; 
     background-color: rgba(194, 73, 104, 0.8); 
-    padding: 10px; /* Add padding around the text */
-    margin-top: 0; /* Space between the image and text box */
-    box-sizing: border-box; /* Include padding and border in width */
+    padding: 10px; 
+    margin-top: 0; 
+    box-sizing: border-box; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
   
+.person-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    color: #031B48;
+    margin-top: 8px;
+    text-align: center; 
+} */
+
+
+/* Flex box for people grids */
+.people-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.people-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%; /* ~4 per row with gaps */
+    min-width: 180px;
+    max-width: 200px;
+    flex-grow: 1;
+}
+
+/* Image styling */
+.person-image {
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+/* Text box styling */
+.person-box,
+.person-box-exoslam {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin-top: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.person-box {
+    background-color: rgba(112, 165, 174, 0.8);
+}
+
+.person-box-exoslam {
+    background-color: rgba(194, 73, 104, 0.8);
+}
+
 /* Text styling */
 .person-description {
     font-family: 'Raleway', sans-serif;
     font-size: 12pt;
     color: #031B48;
     margin-top: 8px;
-    text-align: center; /* Ensure text is centered under the image */
+    text-align: center;
 }
 
+@media (max-width: 768px) {
+    .people-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .people-grid > div {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .person-description {
+        font-size: 14pt;
+    }
+}
