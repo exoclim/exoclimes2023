@@ -321,63 +321,79 @@
                     <div class="col mt-5">
                         <div class="blurred-background p-5">
                         <h2 style="color: #031B48">Hosts</h2>
-                        <!-- Responsive Wrapper -->
-                        <div class="table-responsive-wrapper">
-                            <table class="table exoclimes-table">
-                            <thead>
-                                <tr>
-                                <th scope="col" style="color: #031B48">Exoclimes</th>
-                                <th scope="col" style="color: #031B48">Year</th>
-                                <th scope="col" style="color: #031B48">Host</th>
-                                <th scope="col" style="color: #031B48">Venue</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <th scope="row"><a href="http://www.astro.ex.ac.uk/exoclimes/2010/dvd/Proceedings.html">I</a></th>
-                                <td>2010</td>
-                                <td>University of Exeter</td>
-                                <td>Exeter, UK</td>
-                                </tr>
-                                <tr>
-                                <th scope="row"><a href="http://www.astro.ex.ac.uk/exoclimes/2012/index.html">II</a></th>
-                                <td>2012</td>
-                                <td>Northwestern University</td>
-                                <td>Aspen, CO, USA</td>
-                                </tr>
-                                <tr>
-                                <th scope="row"><a href="https://www.yumpu.com/en/document/view/34069553/exoclimes-conference-booklet1">III</a></th>
-                                <td>2014</td>
-                                <td>University of Bern</td>
-                                <td>Davos, CH</td>
-                                </tr>
-                                <tr>
-                                <th scope="row"><a href="https://astrobiology.nasa.gov/nai/media/medialibrary/2016/08/ExoClimes_2016_report.pdf">IV</a></th>
-                                <td>2016</td>
-                                <td>McGill University</td>
-                                <td>Squamish, BC, CA</td>
-                                </tr>
-                                <tr>
-                                <th scope="row"><a href="https://users.physics.ox.ac.uk/~pierrehumbert/exoclimes2019/">V</a></th>
-                                <td>2019</td>
-                                <td>University of Oxford</td>
-                                <td>Oxford, UK</td>
-                                </tr>
-                                <tr>
-                                <th scope="row"><a href="https://salmasalhi7.github.io/exoclimes2023_archive/">VI</a></th>
-                                <td>2023</td>
-                                <td>University of Exeter</td>
-                                <td>Exeter, UK</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">VII</th>
-                                <td>2025</td>
-                                <td>Université de Montréal</td>
-                                <td>Montréal, QC, CA</td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div> <!-- end table-responsive-wrapper -->
+                        <div class="flex-table">
+
+                            <!-- Header -->
+                            <div class="flex-table-row flex-table-header">
+                            <div class="flex-cell">Exoclimes</div>
+                            <div class="flex-cell">Year</div>
+                            <div class="flex-cell">Host</div>
+                            <div class="flex-cell">Venue</div>
+                            </div>
+
+                            <!-- Rows -->
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">
+                                <a href="http://www.astro.ex.ac.uk/exoclimes/2010/dvd/Proceedings.html">I</a>
+                            </div>
+                            <div class="flex-cell" data-label="Year">2010</div>
+                            <div class="flex-cell" data-label="Host">University of Exeter</div>
+                            <div class="flex-cell" data-label="Venue">Exeter, UK</div>
+                            </div>
+
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">
+                                <a href="http://www.astro.ex.ac.uk/exoclimes/2012/index.html">II</a>
+                            </div>
+                            <div class="flex-cell" data-label="Year">2012</div>
+                            <div class="flex-cell" data-label="Host">Northwestern University</div>
+                            <div class="flex-cell" data-label="Venue">Aspen, CO, USA</div>
+                            </div>
+
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">
+                                <a href="https://www.yumpu.com/en/document/view/34069553/exoclimes-conference-booklet1">III</a>
+                            </div>
+                            <div class="flex-cell" data-label="Year">2014</div>
+                            <div class="flex-cell" data-label="Host">University of Bern</div>
+                            <div class="flex-cell" data-label="Venue">Davos, CH</div>
+                            </div>
+
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">
+                                <a href="https://astrobiology.nasa.gov/nai/media/medialibrary/2016/08/ExoClimes_2016_report.pdf">IV</a>
+                            </div>
+                            <div class="flex-cell" data-label="Year">2016</div>
+                            <div class="flex-cell" data-label="Host">McGill University</div>
+                            <div class="flex-cell" data-label="Venue">Squamish, BC, CA</div>
+                            </div>
+
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">
+                                <a href="https://users.physics.ox.ac.uk/~pierrehumbert/exoclimes2019/">V</a>
+                            </div>
+                            <div class="flex-cell" data-label="Year">2019</div>
+                            <div class="flex-cell" data-label="Host">University of Oxford</div>
+                            <div class="flex-cell" data-label="Venue">Oxford, UK</div>
+                            </div>
+
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">
+                                <a href="https://salmasalhi7.github.io/exoclimes2023_archive/">VI</a>
+                            </div>
+                            <div class="flex-cell" data-label="Year">2023</div>
+                            <div class="flex-cell" data-label="Host">University of Exeter</div>
+                            <div class="flex-cell" data-label="Venue">Exeter, UK</div>
+                            </div>
+
+                            <div class="flex-table-row">
+                            <div class="flex-cell" data-label="Exoclimes">VII</div>
+                            <div class="flex-cell" data-label="Year">2025</div>
+                            <div class="flex-cell" data-label="Host">Université de Montréal</div>
+                            <div class="flex-cell" data-label="Venue">Montréal, QC, CA</div>
+                            </div>
+
+                        </div> <!-- end flex-table -->
                         <!-- <table class="table exoclimes-table">
                             <thead>
                               <tr>

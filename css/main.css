@@ -15,15 +15,55 @@
     src: url('https://fonts.cdnfonts.com/css/good-times-2');
 } */
 
-.table-responsive-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.flex-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.table-responsive-wrapper table {
-  min-width: 600px; /* Adjust depending on your table */
-  width: 100%;
-  border-collapse: collapse;
+.flex-table-row {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+.flex-table-header {
+  font-weight: bold;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #031B48;
+}
+
+.flex-cell {
+  flex: 1 1 25%;
+  padding: 8px;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-cell {
+    flex: 1 1 100%;
+  }
+
+  .flex-table-header {
+    display: none; /* Optional: hide header on small screens */
+  }
+
+  .flex-table-row {
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    padding: 8px;
+    flex-direction: column;
+  }
+
+  .flex-cell::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: #031B48;
+  }
 }
 
 .center {
