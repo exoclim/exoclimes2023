@@ -161,6 +161,12 @@
                         </div>
                         <div class="people-grid">
                             <div>
+                                <img src="img/frederique_lasilla.png" alt="Person 1" class="person-image">
+                                <div class="person-box">
+                                    <p class="person-description" onclick="showModal('frederique-baron')"><b>Frédérique Baron</b><br>SciComm for Academic Research</p>
+                                </div>
+                            </div>
+                            <div>
                                 <img src="img/CassandraBolduc2024.PNG" alt="Person 1" class="person-image">
                                 <div class="person-box">
                                     <p class="person-description" onclick="showModal('cassandra-bolduc')"><b>Cassandra Bolduc</b><br>Going Beyond Academia</p>
@@ -376,6 +382,21 @@
             <!-- END PAGE CONTENT -->
 
             <div class="overlay" id="overlay"></div>
+
+            <div class="modal" id="frederique-baron">
+                <!-- <button class="close-btn" onclick="closeModal('elspeth-lee')">Close</button> -->
+
+                <!-- Tab Buttons -->
+                <div class="tab-buttons">
+                    <button onclick="openTab('frederique-baron', 'bio')" class="tab">Biography</button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tab-content" id="frederique-baron-bio" style="display: none;">
+                    <div class="modal-header">About Frédérique Baron</div>
+                    <p>Frédérique Baron is an astrophysicist specializing in the search for exoplanets. She holds a PhD from Université de Montréal and leads instrumentation projects at the Institute for Research on Exoplanets and the Observatoire du Mont-Mégantic. She also serves as coordinator of the Centre for Research in Astrophysics of Quebec, where she contributes to uniting the province’s astrophysics community. With extensive experience in science communication, Frédérique is dedicated to sharing astrophysical knowledge with broad audiences in a clear and engaging manner.</p>
+                </div>
+            </div>
 
             <div class="modal" id="david-brain">
                 <!-- <button class="close-btn" onclick="closeModal('elspeth-lee')">Close</button> -->
