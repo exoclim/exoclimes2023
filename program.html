@@ -215,6 +215,28 @@
                         border-top: 1px solid #bbb;
                     }
 
+                    .grouped-block {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    height: calc(120px * 7 + 40px); /* total height: X normal blocks + 40px header */
+                    box-sizing: border-box;
+                    }
+                    .grouped-block-header {
+                    height: 40px;
+                    background-color: #781c44;
+                    text-align: center;
+                    line-height: 40px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #ccc;
+                    flex-shrink: 0;
+                    }
+                    .grouped-block-body {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    }
+
                     .bottom-0  { bottom: 0px; }
                     .bottom-40 { bottom: 40px; }
                     .bottom-80 { bottom: 80px; }
@@ -402,7 +424,7 @@
                                 <div class="schedule-header">Time</div>
                                 <div class="schedule-block time">08:00 AM</div>
                                 <div class="schedule-block time">09:00 AM</div>
-                                <!-- <div class="chair">Chair</div> -->
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">09:30 AM</div>
                                 <div class="schedule-block time">09:45 AM</div>
                                 <div class="schedule-block time">10:00 AM</div>
@@ -477,10 +499,15 @@
                                 <div class="schedule-header">Monday</div>
                                 <div class="schedule-block meal">Breakfast</div>
                                 <div class="schedule-block remarks">Opening remarks</div>
-                                <div class="schedule-block invited-talk span-3" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Observing Atmospheric Dynamics on Exoplanets<br><em>Review Talk</em></div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('natalia-gomez')"><b>Natalia Lucia Oliveris Gomez: </b>Mapping the atmosphere of the BD binary system WISE 1049AB</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('amelie-gressier')"><b>Amelie Gressier: </b>JWST near-infrared phase curve analysis of the ultra-short-period Lava planet K2-141b</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('fei-wang')"><b>Fei Wang: </b>Towards Time-Resolved Atmospheric Retrievals: Eigen-Spectra Inversion Techniques for Variable Brown Dwarfs and Exoplanet</div>
+                                <div class="grouped-block">
+                                    <div class="grouped-block-header">Session I</div>
+                                    <div class="grouped-block-body">
+                                        <div class="schedule-block invited-talk span-3" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Observing Atmospheric Dynamics on Exoplanets<br><em>Review Talk</em></div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('natalia-gomez')"><b>Natalia Lucia Oliveris Gomez: </b>Mapping the atmosphere of the BD binary system WISE 1049AB</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('amelie-gressier')"><b>Amelie Gressier: </b>JWST near-infrared phase curve analysis of the ultra-short-period Lava planet K2-141b</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('fei-wang')"><b>Fei Wang: </b>Towards Time-Resolved Atmospheric Retrievals: Eigen-Spectra Inversion Techniques for Variable Brown Dwarfs and Exoplanet</div>
+                                    </div>
+                                </div>
                                 <div class="schedule-block meal span-2">Coffee break</div>
                                 <div class="schedule-block invited-talk span-3" onclick="showModal('keren-duer-milner')"><b>Keren Duer-Milner:</b><br>Atmospheric Dynamics of Solar System Giants<br><em>Review Talk</em></div>
                                 <div class="schedule-block contributed-talk" onclick="showModal('edouard-barrier')"><b>Edouard Barrier: </b>GCM simulations of temperature sub-Neptunes using a new convection scheme</div>
