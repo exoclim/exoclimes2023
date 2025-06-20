@@ -231,6 +231,11 @@
                     text-align: center;
                     }
 
+                    .span-11 {
+                    height: calc(108px * 11); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
                     .span-22 {
                     height: calc(108px * 22); /* 3 blocks + 2 gaps */
                     text-align: center;
@@ -464,89 +469,25 @@
                                 <div class="schedule-block contributed-talk" onclick="showModal('chloe-fisher')"><b>Chloe Fisher: </b>Comparing the Chemistry of Sub-Neptunes in Multi-Planet Systems with JWST</div>
                                 <div class="schedule-block invited-talk span-4" onclick="showModal('spin-off-friday')"><b>Spin-off Evenings:</b><br>Going Beyond Academia<br><em>Cassandra Bolduc & Jeffrey Silverman</em></div>
                                 <div class="schedule-block buffer span-5">Buffer</div>
-                                <div class="schedule-block gala-dinner span-8">Conference Dinner</div>
-
+                                <div class="schedule-block gala-dinner span-11">Conference Dinner</div>
                             </div>
-                        <tr>
-                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
-                        </tr>
-                        <tr>
-                            <td class="time">09:30 AM</td>
-                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape from Solary System Planets and Moons<br><em>Review Talk</em></td>
-                        </tr>
-                        <tr>
-                            <td class="time">09:45 AM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">10:00 AM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">10:15 AM</td>
-                            <td class="contributed-talk" onclick="showModal('aaron-bello-arufe')"><b>Aaron Bello-Arufe: </b>Evidence for an atmosphere on the sub-Earth L98-59b</td>
-                        </tr>
-                        <tr>
-                            <td class="time">10:30 AM</td>
-                            <td class="contributed-talk" onclick="showModal('collin-cherubim')"><b>Collin Cherubim: </b>An Oxidation Gradient Spanning the Small Planet Radius Valley</td>
-                        </tr>
-                        <tr>
-                            <td class="time">10:45 AM</td>
-                            <td class="contributed-talk" onclick="showModal('mark-fortune')"><b>Mark Fortune: </b>Constraining the atmosphere of the rocky exoplanet LHS-1140c and lessons for the Rocky Worlds DDT from analysing JWST/MIRI data at the pixel-level</td>
-                        </tr>
-                        <tr>
-                            <td class="time">11:00 AM</td>
-                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
-                        </tr>
-                        <tr>
-                            <td class="time">11:15 AM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">11:30 AM</td>
-                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('leonardo-dos-santos')"><b>Leonardo Dos Santos:</b><br>A Tale of Asymmetric Transits, Missing Planets, and Finally Including Magnetic Fields<br><em>Review Talk</em></td>
-                        </tr>
-                        <tr>
-                            <td class="time">11:45 AM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">12:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">12:15 PM</td>
-                            <td class="contributed-talk" onclick="showModal('eva-maria-ahrer')"><b>Eva-Maria Ahrer: </b>Escaping helium and muted features suggest a high-metallicity atmosphere on sub-Neptune GJ3090b from JWST transit spectroscopy</td>
-                        </tr>
-                        <tr>
-                            <td class="time">12:30 PM</td>
-                            <td class="contributed-talk" onclick="showModal('jaume-orell-miquel')"><b>Jaume Orell-Miquel: </b>Insights from the largest observational campaign on escaping atmospheres</td>
-                        </tr>
-                        <tr>
-                            <td class="time">12:45 PM</td>
-                            <td class="contributed-talk" onclick="showModal('shreyas-vissapragada')"><b>Shreyas Vissapragada: </b>Towards Precise Constraints on Atmospheric Evolution for 50 Sub-Neptunes</td>
-                        </tr>
-                        <tr>
-                            <td class="time">13:00 PM</td>
-                            <td class="remarks" style="vertical-align: middle;">Closing remarks</td>
-                        </tr>
-                        <tr>
-                            <td class="time">13:30 PM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">13:45 PM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">14:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">14:15 PM</td>
-                        </tr>
-                        <tr>
-                            <td class="time">14:30 PM</td>                           
-                            <td class="free-time">Discussion</td>
-                        </tr>
-                        <tr>
-                            <td class="time">14:45 PM</td>
-                            <td rowspan="26" style="vertical-align: middle;" class="departure">Departure</td>
-                        </tr>
 
-
+                            <div class="schedule-day">
+                                <div class="schedule-header">Thursday</div>
+                                <div class="schedule-block meal span-2">Breakfast</div>
+                                <div class="schedule-block invited-talk span-3" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape from Solary System Planets and Moons<br><em>Review Talk</em></div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('aaron-bello-arufe')"><b>Aaron Bello-Arufe: </b>Evidence for an atmosphere on the sub-Earth L98-59b</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('collin-cherubim')"><b>Collin Cherubim: </b>An Oxidation Gradient Spanning the Small Planet Radius Valley</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('mark-fortune')"><b>Mark Fortune: </b>Constraining the atmosphere of the rocky exoplanet LHS-1140c and lessons for the Rocky Worlds DDT from analysing JWST/MIRI data at the pixel-level</div>
+                                <div class="schedule-block meal span-2">Coffee break</div>
+                                <div class="schedule-block invited-talk span-3" onclick="showModal('leonardo-dos-santos')"><b>Leonardo Dos Santos:</b><br>A Tale of Asymmetric Transits, Missing Planets, and Finally Including Magnetic Fields<br><em>Review Talk</em></div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('eva-maria-ahrer')"><b>Eva-Maria Ahrer: </b>Escaping helium and muted features suggest a high-metallicity atmosphere on sub-Neptune GJ3090b from JWST transit spectroscopy</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('jaume-orell-miquel')"><b>Jaume Orell-Miquel: </b>Insights from the largest observational campaign on escaping atmospheres</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('shreyas-vissapragada')"><b>Shreyas Vissapragada: </b>Towards Precise Constraints on Atmospheric Evolution for 50 Sub-Neptunes</div>
+                                <div class="schedule-block remakrs">Closing remarks</div>
+                                <div class="schedule-block meal span-6">Lunch</div>
+                                <div class="schedule-block arrival span-36">Departure</div>
+                            </div>
                         </div>
                     </div>
 
