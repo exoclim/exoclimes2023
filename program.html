@@ -203,6 +203,18 @@
                         box-sizing: border-box;
                     }
 
+                    .embedded-chair {
+                        position: absolute;
+                        bottom: 0; /* aligns to the bottom of the parent */
+                        height: 40px;
+                        width: 100%;
+                        background-color: #781c44;
+                        text-align: center;
+                        line-height: 40px;
+                        z-index: 2;
+                        border-top: 1px solid #bbb;
+                    }
+
                     .time {
                     background-color: rgba(112, 165, 174, 0.8); /* same as your .time */
                     color: white;
@@ -451,7 +463,9 @@
                             <!-- Sunday -->
                             <div class="schedule-day">
                                 <div class="schedule-header">Sunday</div>
-                                <div class="schedule-block departure span-32">Arrival</div>
+                                <div class="schedule-block departure span-32">Arrival
+                                    <div class="embedded-chair"></div>
+                                </div>
                                 <div class="schedule-block gala-dinner span-13">Welcoming Reception</div>
                                 <div class="schedule-block departure span-12">End</div>
                             </div>
