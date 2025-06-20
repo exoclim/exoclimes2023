@@ -96,7 +96,7 @@
                     th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
                     th { background-color: rgba(112, 165, 174, 0.8); color: white; }
                     .talk { background-color: #f0f8ff; cursor: pointer; }
-                    .modal { display: none; position: fixed; top: 50%; left: 50%;
+                    .modal { display: none; position: absolute; top: 50%; left: 50%;
                             transform: translate(-50%, -50%); width: 90%;
                             background-color: #fff; border: 2px solid #031B48;
                             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; z-index: 1000; max-height: 60vh; }
@@ -1244,11 +1244,19 @@
                         // }
                         function showModal(id) {
                             const modal = document.getElementById(id);
+                            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                            const viewportHeight = window.innerHeight;
+
+                            modal.style.top = `${scrollTop + viewportHeight / 2}px`;
+                            modal.style.left = '50%';
+                            modal.style.transform = 'translate(-50%, -50%)';
+
                             modal.style.display = 'block';
                             document.getElementById('overlay').style.display = 'block';
                         }
-
+        
                         function closeModal(id) {
+                            console.log("Closing modal:", id);  // Add this
                             document.getElementById(id).style.display = 'none';
                             document.getElementById('overlay').style.display = 'none';
                         }
