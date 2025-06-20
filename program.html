@@ -114,6 +114,138 @@
                     .departure {background-color: #D9D9D9;}
                     .buffer {background-color: #B7B7B7;}
                     .gala-dinner {background-color: #dd8484;}
+                    /* Flex-based mobile-friendly conference schedule */
+                    .schedule-wrapper {
+                    overflow-x: auto;       /* Enable horizontal scroll if content too wide */
+                    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+                    width: 100%;            /* fill parent width */
+                    box-sizing: border-box;
+                    }
+                    .schedule-container {
+                    display: flex;
+                    overflow-x: auto;
+                    width: 100%;          /* span entire parent width */
+                    max-width: 100%;      /* avoid shrinking due to max-width */
+                    box-sizing: border-box; 
+                    flex-wrap: nowrap;
+                    gap: 1rem;
+                    font-family: 'Raleway', sans-serif;
+                    }
+
+                    .schedule-times {
+                    flex: 0 0 90px;
+                    background: white; /* matching your .time header color */
+                    border-radius: 5px;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    font-weight: bold;
+                    text-align: center;
+                    color: white;
+                    position: sticky;
+                    border-right: 1px solid #ddd;
+                    left: 0;
+                    z-index: 10;
+                    }
+
+                    .schedule-day {
+                    flex: 0 0 280px;
+                    background: white;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                    padding: 5px;
+                    box-sizing: border-box;
+                    }
+
+                    .schedule-header {
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    text-align: center;
+                    color: rgba(112, 165, 174, 0.8); /* use your pinkish red */
+                    margin-bottom: 10px;
+                    background-color: rgba(194, 73, 104, 0.2);
+                    padding: 8px;
+                    border-radius: 5px;
+                    }
+
+                    .schedule-block {
+                    height: 96px; /* height for 1 time block */
+                    border: 1px solid #ccc;
+                    flex-direction: column;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.8em;
+                    color: #031B48;
+                    text-align: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    }
+
+                    /* Day columns */
+                    .day-column {
+                    flex: 0 0 250px;
+                    min-width: 250px;
+                    }
+
+                    .time {
+                    background-color: rgba(112, 165, 174, 0.8); /* same as your .time */
+                    color: white;
+                    font-weight: 700;
+                    }
+
+                    .blank {
+                    background: transparent;
+                    box-shadow: none;
+                    margin-bottom: 0;
+                    height: 96px; /* keeps layout alignment */
+                    }
+
+                    /* Span multiple time blocks */
+                    .span-2 {
+                    height: calc(96px * 2); /* 2 blocks + 1 gap */
+                    text-align: center;
+                    }
+
+                    .span-3 {
+                    height: calc(96px * 3); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    .span-4 {
+                    height: calc(96px * 4); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    .span-5 {
+                    height: calc(96px * 5); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    .span-6 {
+                    height: calc(96px * 6); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    .span-9 {
+                    height: calc(96px * 9); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    .span-36 {
+                    height: calc(96px * 36); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    /* Responsive tweaks */
+                    @media (max-width: 768px) {
+                        .schedule-cell {
+                            font-size: 10px;
+                            padding: 6px;
+                        }
+                        .schedule-row {
+                            flex-wrap: wrap;
+                        }
+                    }
                 </style>
             </head>
             <div class="container-fluid">
@@ -171,7 +303,318 @@
                         </a>
                     </p>
                     Click on the speakers to view their abstracts! 
-                    <table>
+                    <div class="schedule-wrapper">
+                        <div class="schedule-container">
+                            <!-- Time column -->
+                            <div class="schedule-times">
+                                <div class="schedule-block time">07:00 AM</div>
+                                <div class="schedule-block time">09:00 AM</div>
+                                <div class="schedule-block time">09:30 AM</div>
+                                <div class="schedule-block time">09:45 AM</div>
+                                <div class="schedule-block time">10:00 AM</div>
+                                <div class="schedule-block time">10:15 AM</div>
+                                <div class="schedule-block time">10:30 AM</div>
+                                <div class="schedule-block time">10:45 AM</div>
+                                <div class="schedule-block time">11:00 AM</div>
+                                <div class="schedule-block time">11:15 AM</div>
+                                <div class="schedule-block time">11:30 AM</div>
+                                <div class="schedule-block time">11:45 AM</div>
+                                <div class="schedule-block time">12:00 PM</div>
+                                <div class="schedule-block time">12:15 PM</div>
+                                <div class="schedule-block time">12:30 PM</div>
+                                <div class="schedule-block time">13:00 PM</div>
+                                <div class="schedule-block time">13:15 PM</div>
+                                <div class="schedule-block time">13:30 PM</div>
+                                <div class="schedule-block time">13:45 PM</div>
+                                <div class="schedule-block time">14:00 PM</div>
+                                <div class="schedule-block time">14:15 PM</div>
+                                <div class="schedule-block time">14:30 PM</div>
+                                <div class="schedule-block time">14:45 PM</div>
+                                <div class="schedule-block time">15:00 PM</div>
+                                <div class="schedule-block time">15:15 PM</div>
+                                <div class="schedule-block time">15:30 PM</div>
+                                <div class="schedule-block time">15:45 PM</div>
+                                <div class="schedule-block time">16:00 PM</div>
+                                <div class="schedule-block time">16:15 PM</div>
+                                <div class="schedule-block time">16:30 PM</div>
+                                <div class="schedule-block time">16:45 PM</div>
+                                <div class="schedule-block time">17:00 PM</div>
+                                <div class="schedule-block time">17:15 PM</div>
+                                <div class="schedule-block time">17:30 PM</div>
+                                <div class="schedule-block time">17:45 PM</div>
+                                <div class="schedule-block time">18:00 PM</div>
+                                <div class="schedule-block time">18:15 PM</div>
+                                <div class="schedule-block time">18:30 PM</div>
+                                <div class="schedule-block time">18:45 PM</div>
+                                <div class="schedule-block time">19:00 PM</div>
+                                <div class="schedule-block time">19:15 PM</div>
+                                <div class="schedule-block time">19:30 PM</div>
+                                <div class="schedule-block time">19:45 PM</div>
+                                <div class="schedule-block time">20:00 PM</div>
+                                <div class="schedule-block time">20:15 PM</div>
+                                <div class="schedule-block time">20:30 PM</div>
+                                <div class="schedule-block time">20:45 PM</div>
+                                <div class="schedule-block time">21:00 PM</div>
+                            </div>
+
+                            <!-- Sunday -->
+                            <div class="schedule-day">
+                                <div class="schedule-header">Sunday</div>
+                                <div class="schedule-block departure span-36">Arrival</div>
+                                <div class="schedule-block gala-dinner span-9">Welcoming Reception</div>
+                                <div class="schedule-block departure span-4">End</div>
+                            </div>
+
+                            <!-- Monday -->
+                            <div class="schedule-day">
+                                <div class="schedule-header">Monday</div>
+                                <div class="schedule-block meal">Breakfast</div>
+                                <div class="schedule-block remarks">Opening remarks</div>
+                                <div class="schedule-block invited-talk span-3" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Observing Atmospheric Dynamics on Exoplanets<br><em>Review Talk</em></div>
+                                <!-- <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Observing Atmospheric Dynamics on Exoplanets<br><em>Review Talk</em></td> -->
+
+                            </div>
+                        <tr>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:30 AM</td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('maria-zamyatina')"><b>Maria Zamyatina:</b><br>Atmospheric Chemistry of Solar and Extrasolar Gas Giants<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('elspeth-lee')"><b>Elspeth Lee:</b><br>Modelling Clouds in 3D<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('anjali-piette')"><b>Anjali Piette:</b><br>Deciphering the Compositions of Super-Earths and Sub-Neptunes with JWST<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape from Solary System Planets and Moons<br><em>Review Talk</em></td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:45 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:15 AM</td>
+                            <td class="contributed-talk" onclick="showModal('natalia-gomez')"><b>Natalia Lucia Oliveris Gomez: </b>Mapping the atmosphere of the BD binary system WISE 1049AB</td>
+                            <td class="contributed-talk" onclick="showModal('robin-baeyens')"><b>Robin Baeyens: </b>One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</td>
+                            <td class="contributed-talk" onclick="showModal('nishil-mehta')"><b>Nishil Mehta: </b>Combining JWST data and General Circulation Models for a 3D view of the warm Jupiter WASP-80b</td>
+                            <td class="contributed-talk" onclick="showModal('matthew-nixon')"><b>Mathhew Nixon: </b>Observable signatures of magma-atmosphere interactions in sub-Neptunes</td>
+                            <td class="contributed-talk" onclick="showModal('aaron-bello-arufe')"><b>Aaron Bello-Arufe: </b>Evidence for an atmosphere on the sub-Earth L98-59b</td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:30 AM</td>
+                            <td class="contributed-talk" onclick="showModal('amelie-gressier')"><b>Amelie Gressier: </b>JWST near-infrared phase curve analysis of the ultra-short-period Lava planet K2-141b</td>
+                            <td class="contributed-talk" onclick="showModal('brianna-lacy')"><b>Brianna Lacy: </b>Mapping Nonequilibrium Chemistry Trends in Cold Rogue Worlds</td>
+                            <td class="contributed-talk" onclick="showModal('diana-powell')"><b>Diana Powell: </b>Spatially varying weather forecasts on hot Jupiters</td>
+                            <td class="contributed-talk" onclick="showModal('cara-pesciotta')"><b>Cara Pesciotta: </b>Hazes and Habitability: The Interaction Between Atmospheric Haze and Liquid Surface Water</td>
+                            <td class="contributed-talk" onclick="showModal('collin-cherubim')"><b>Collin Cherubim: </b>An Oxidation Gradient Spanning the Small Planet Radius Valley</td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:45 AM</td>
+                            <td class="contributed-talk" onclick="showModal('fei-wang')"><b>Fei Wang: </b>Towards Time-Resolved Atmospheric Retrievals: Eigen-Spectra Inversion Techniques for Variable Brown Dwarfs and Exoplanet</td>
+                            <td class="contributed-talk" onclick="showModal('nathalie-grasser')"><b>Nathalie Grasser: </b>Chemical fingerprints of young L dwarf twins as proxies of gas giant atmospheres</td>
+                            <td class="contributed-talk" onclick="showModal('sophia-vaughan')"><b>Sophia Vaughan: </b>Understanding the survival of desert wanderer: Characterizing LTT-9779 b in reflected light</td>
+                            <td class="contributed-talk" onclick="showModal('harrison-nicholls')"><b>Harrison Nicholls: </b>Exploring the diversity of lava planet atmospheres through coupled interior-atmosphere modelling</td>
+                            <td class="contributed-talk" onclick="showModal('mark-fortune')"><b>Mark Fortune: </b>Constraining the atmosphere of the rocky exoplanet LHS-1140c and lessons for the Rocky Worlds DDT from analysing JWST/MIRI data at the pixel-level</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:00 AM</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:15 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:30 AM</td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('keren-duer-milner')"><b>Keren Duer-Milner:</b><br>Atmospheric Dynamics of Solar System Giants<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('emily-deibert')"><b>Emily Deibert:</b><br>Probing Atmospheric Chemistry from High Resolution Spectroscopy<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('xinting-yu')"><b>Xinting Yu:</b><br>Bridging Laboratory Aerosol Studies and Atmospheric Modeling: Lessons from Titan<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('oliver-shorttle')"><b>Oliver Shorttle:</b><br>The search for life at planetary interfaces<br><em>Review Talk</em></td>
+                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('leonardo-dos-santos')"><b>Leonardo Dos Santos:</b><br>A Tale of Asymmetric Transits, Missing Planets, and Finally Including Magnetic Fields<br><em>Review Talk</em></td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:45 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:15 PM</td>
+                            <td class="contributed-talk" onclick="showModal('edouard-barrier')"><b>Edouard Barrier: </b>GCM simulations of temperature sub-Neptunes using a new convection scheme</td>
+                            <td class="contributed-talk" onclick="showModal('krishna-kanumalla')"><b>Krishna Kanumalla: </b>A song of ice and fire…and rocks!: Probing the rock-to-ice content of ultrahot Jupiters using IGRINS</td>
+                            <td class="contributed-talk" onclick="showModal('thomas-kennedy')"><b>Thomas Kennedy: </b>Exploring cloud uncertainties with a grid of hot Jupiter GCMs</td>
+                            <td class="contributed-talk" onclick="showModal('esther-van-dijk')"><b>Esther van Dijk: </b>Retrieving interior properties of hot Jupiters with Love numbers and atmospheric measurements</td>
+                            <td class="contributed-talk" onclick="showModal('eva-maria-ahrer')"><b>Eva-Maria Ahrer: </b>Escaping helium and muted features suggest a high-metallicity atmosphere on sub-Neptune GJ3090b from JWST transit spectroscopy</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:30 PM</td>
+                            <td class="contributed-talk" onclick="showModal('robert-frazier')"><b>Robert Frazier: </b>WASP-121b Under the Gaze of JWST: How 3D Models Compare to its Spectroscopic Phase Curve</td>
+                            <td class="contributed-talk" onclick="showModal('bibiana-prinoth')"><b>Bibiana Prinoth: </b>Hidden in plain sight: Using ESPRESSO's superpower to detect depleted titanium in WASP-121 b</td>
+                            <td class="contributed-talk" onclick="showModal('vighnesh-nagpal')"><b>Vighnesh Nagpal: </b>Clouds and Hazes on Sub-Neptunes: Insights from 2D Microphysical Modeling</td>
+                            <td class="contributed-talk" onclick="showModal('charles-edouard-boukare')"><b>Charles-Edouard Boukare: </b>Exploring the Internal Dynamics of Lava Exoplanets</td>
+                            <td class="contributed-talk" onclick="showModal('jaume-orell-miquel')"><b>Jaume Orell-Miquel: </b>Insights from the largest observational campaign on escaping atmospheres</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:45 PM</td>
+                            <td class="contributed-talk" onclick="showModal('namrah-habib')"><b>Namrah Habib: </b>Do Episodic Storms Always Occur on Planets with Hydrogen-Rich Atmospheres? A Parameter-Space Study of Vertical Mixing in Sub-Neptune Exoplanets</td>
+                            <td class="contributed-talk" onclick="showModal('linn-boldt-christmas')"><b>Linn Boldt-Christmas: </b>High-resolution spectroscopy studies of a cloudy and warm Neptune</td>
+                            <td class="contributed-talk" onclick="showModal('giulia-roccetti')"><b>Giulia Roccetti: </b>Exploring Earth's Reflected Light Through 3D Radiative Transfer Simulations</td>
+                            <td class="contributed-talk" onclick="showModal('claire-guimond')"><b>Claire Guimond: </b>A geochemical view on the ubiquity of atmospheric CO2 on rocky exoplanets</td>
+                            <td class="contributed-talk" onclick="showModal('shreyas-vissapragada')"><b>Shreyas Vissapragada: </b>Towards Precise Constraints on Atmospheric Evolution for 50 Sub-Neptunes</td>
+                        </tr>
+                        <tr>
+                            <td class="time">13:00 PM</td>
+                            <td rowspan="6" style="vertical-align: middle;" class="meal">Lunch</td>
+                            <td rowspan="6" style="vertical-align: middle;" class="meal">Lunch</td>
+                            <td class="contributed-talk" onclick="showModal('yifan-zhou')"><b>Yifan Zhou: </b>JWST as an Exoplanet Weather Satellite: NIRCam Coronagraphic Monitoring of Beta Pic b</td>
+                            <td rowspan="6" style="vertical-align: middle;" class="meal">Lunch</td>
+                            <td class="remarks" style="vertical-align: middle;">Closing remarks</td>
+                        </tr>
+                        <tr>
+                            <td class="time">13:15 PM</td>
+                            <td class="contributed-talk" onclick="showModal('paul-molliere')"><b>Paul Molliere: </b>Characterizing Silicate Clouds in Rogue Planets with JWST</td>
+                            <td rowspan="6" style="vertical-align: middle;" class="meal">Lunch</td>
+                        </tr>
+                        <tr>
+                            <td class="time">13:30 PM</td>
+                            <td rowspan="10" style="vertical-align: middle;" class="free-time">Excursion</td>
+                        </tr>
+                        <tr>
+                            <td class="time">13:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">14:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">14:15 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">14:30 PM</td>
+                            <td class="free-time">Discussion</td>
+                            <td class="free-time">Discussion</td>
+                            <td class="free-time">Discussion</td>
+                        </tr>
+                        <tr>
+                            <td class="time">14:45 PM</td>
+                            <td rowspan="9" style="vertical-align: middle;" class="free-time">Free Time</td>
+                            <td rowspan="9" style="vertical-align: middle;" class="free-time">Free Time</td>
+                            <td rowspan="5" style="vertical-align: middle;" class="free-time">Free Time</td>
+                            <td rowspan="26" style="vertical-align: middle;" class="departure">Departure</td>
+                        </tr>
+                        <tr>
+                            <td class="time">15:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">15:15 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">15:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">15:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">16:00 PM</td>
+                            <td class="free-time">Discussion</td>
+                            <td class="contributed-talk" onclick="showModal('jiachen-liu')"><b>Jiachen Liu: </b>Transport-induced Chemistry and Vertical Mixing of Temperate sub-Neptunes: K2-18b as an Example</td>
+                        </tr>
+                        <tr>
+                            <td class="time">16:15 PM</td>
+                            <td rowspan="11" style="vertical-align: middle;" class="free-time">Free Time</td>
+                            <td class="contributed-talk" onclick="showModal('lily-alderson')"><b>Lili Alderson: </b>Uncovering the Carbon Chemistry of the Exo-Neptune HAT-P-11b</td>
+                        </tr>
+                        <tr>
+                            <td class="time">16:30 PM</td>
+                            <td class="contributed-talk" onclick="showModal('pierre-alexis-roy')"><b>Pierre-Alexis Roy: </b>Revealing the first thermal emission spectrum of a hot and dense sub-Neptune</td>
+                        </tr>
+                        <tr>
+                            <td class="time">16:45 PM</td>
+                            <td class="contributed-talk" onclick="showModal('chloe-fisher')"><b>Chloe Fisher: </b>Comparing the Chemistry of Sub-Neptunes in Multi-Planet Systems with JWST</td>
+                        </tr>
+                        <tr>
+                            <td class="time">17:00 PM</td>
+                            <td class="contributed-talk" onclick="showModal('cathal-maguire')"><b>Cathal Maguire: </b>Multi-dimensional insights from high- and low-resolution spectroscopy</td>
+                            <td class="contributed-talk" onclick="showModal('james-kirk')"><b>James Kirk: </b>BOWIE-ALIGN: Testing the dependence of atmospheric composition on migration history with the misaligned hot Jupiter WASP-15b</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="invited-talk" onclick="showModal('spin-off-friday')"><b>Spin-off Evenings:</b><br>Going Beyond Academia<br><em>Cassandra Bolduc & Jeffrey Silverman</em></td>
+                        </tr>
+                        <tr>
+                            <td class="time">17:15 PM</td>
+                            <td class="contributed-talk" onclick="showModal('vincent-yariv')"><b>Vincent Yariv: </b>Towards Doppler Eclipse Mapping of Hot Jupiters</td>
+                            <td class="contributed-talk" onclick="showModal('nicole-wallack')"><b>Nicole Wallack: </b>Early Results from the JWST Giant Exoplanets Around M-dwarf Stars (GEMS) Program</td>
+                        </tr>
+                        <tr>
+                            <td class="time">17:30 PM</td>
+                            <td class="contributed-talk" onclick="showModal('lennart-van-sluijs')"><b>Lennart van Sluijs: </b>1D Retrievals versus a 3D GCM: A Biased view of an Ultra Hot Jupiter at high resolution</td>
+                            <td class="contributed-talk" onclick="showModal('yoav-rotman')"><b>Yoav Rotman: </b>It's a bird! It's a plane! It's… an unknown gas?: Overcoming Modeling Deficiencies in Retrievals of JWST Exoplanet Spectra</td>
+                        </tr>
+                        <tr>
+                            <td class="time">17:45 PM</td>
+                            <td class="contributed-talk" onclick="showModal('vivien-parmentier')"><b>Vivien Parmentier: </b>A population view of hot Jupiter atmospheres</td>
+                            <td class="contributed-talk" onclick="showModal('francisco-ardevol-martinez')"><b>Franciso Ardevol Martinez: </b>Overwhelmed with JWST data? Machine learning to the rescue!</td>
+                        </tr>
+                        <tr>
+                            <td class="time">18:00 PM</td>
+                            
+                            <td rowspan="4" style="vertical-align: middle;" class="invited-talk" onclick="showModal('spin-off-monday')"><b>Spin-off Evenings:</b><br>How SciComm can help you with your research Workshop by <br><em>Marie-Ève Naud & Frédérique Baron</em></td>
+                            <td rowspan="4" style="vertical-align: middle;" class="invited-talk" onclick="showModal('spin-off-tuesday')"><b>Spin-off Evenings:</b><br>Machine Learning Applications in Climate Science Discussion Panel by <br><em>Chloe Fisher and Salma Salhi</em></td>
+                            <td rowspan="5" style="vertical-align: middle;" class="buffer">Buffer</td>
+                        </tr>
+                        <tr>
+                            <td class="time">18:15 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">18:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">18:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">19:00 PM</td>
+                            <td class="buffer">Buffer</td>
+                            <td class="buffer">Buffer</td>
+                            <td class="buffer">Buffer</td>
+                        </tr>
+                        <tr>
+                            <td class="time">19:15 PM</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="meal">Dinner</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="meal">Dinner</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="meal">Dinner</td>
+                            <td rowspan="8" style="vertical-align: middle;" class="gala-dinner">Conference Dinner</td>
+                        </tr>
+                        <tr>
+                            <td class="time">19:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">19:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">20:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">20:15 PM</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="departure">End</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="departure">End</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="departure">End</td>
+                            <td rowspan="4" style="vertical-align: middle;" class="departure">End</td>
+                        </tr>
+                        <tr>
+                            <td class="time">20:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">20:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="time">21:00 PM</td>
+                        </tr>
+                        </div>
+                    </div>
+
+
+                    <!-- <table>
                         <tr>
                             <th style="color: #031B48">Time</th>
                             <th style="color: #031B48">Sunday</th>
@@ -425,7 +868,7 @@
                         <tr>
                             <td class="time">21:00 PM</td>
                         </tr>
-                    </table>
+                    </table> -->
         
                     <div class="overlay" id="overlay"></div>
         
