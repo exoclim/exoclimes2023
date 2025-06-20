@@ -182,6 +182,20 @@
                     position: relative;
                     }
 
+                    .small-block {
+                        height: 40px; /* height for 1 time block */
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.8em;
+                        color: #031B48;
+                        text-align: center;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        position: relative;
+                    }
+
                     /* Day columns */
                     .day-column {
                     flex: 0 0 250px;
@@ -489,10 +503,8 @@
                             <!-- Sunday -->
                             <div class="schedule-day">
                                 <div class="schedule-header">Sunday</div>
-                                <div class="schedule-block departure span-32">
-                                    <!-- <div class="spacer-40"></div> -->
-                                    Arrival
-                                </div>
+                                <div class="schedule-block departure span-32">Arrival</div>
+                                <div class="small-block departure"></div>
                                 <div class="schedule-block gala-dinner span-13">Welcoming Reception</div>
                                 <div class="schedule-block departure span-12">End</div>
                             </div>
