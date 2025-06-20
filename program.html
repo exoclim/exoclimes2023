@@ -1436,19 +1436,12 @@
                         // }
                         function showModal(id) {
                             const modal = document.getElementById(id);
-                            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-                            const viewportHeight = window.innerHeight;
-
-                            modal.style.top = `${scrollTop + viewportHeight / 2}px`;
-                            modal.style.left = '50%';
-                            modal.style.transform = 'translate(-50%, -50%)';
-
                             modal.style.display = 'block';
                             document.getElementById('overlay').style.display = 'block';
                         }
-        
+
                         function closeModal(id) {
-                            console.log("Closing modal:", id);  // Add this
+                            console.log("Closing modal:", id);
                             document.getElementById(id).style.display = 'none';
                             document.getElementById('overlay').style.display = 'none';
                         }
