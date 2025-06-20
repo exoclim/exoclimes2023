@@ -187,6 +187,22 @@
                     min-width: 250px;
                     }
 
+                    .chair{
+                        background-color: #781c44; /* same as your .time */
+                        color: white;
+                        font-weight: 700;
+                        height: 40px; /* height for 1 time block */
+                        border: 1px solid #ccc;
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.8em;
+                        text-align: center;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+
                     .time {
                     background-color: rgba(112, 165, 174, 0.8); /* same as your .time */
                     color: white;
@@ -258,6 +274,11 @@
 
                     .span-13 {
                     height: calc(120px * 13); /* 3 blocks + 2 gaps */
+                    text-align: center;
+                    }
+
+                    .span-14 {
+                    height: calc(120px * 14); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
@@ -360,6 +381,7 @@
                                 <div class="schedule-header">Time</div>
                                 <div class="schedule-block time">08:00 AM</div>
                                 <div class="schedule-block time">09:00 AM</div>
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">09:30 AM</div>
                                 <div class="schedule-block time">09:45 AM</div>
                                 <div class="schedule-block time">10:00 AM</div>
@@ -368,6 +390,7 @@
                                 <div class="schedule-block time">10:45 AM</div>
                                 <div class="schedule-block time">11:00 AM</div>
                                 <div class="schedule-block time">11:15 AM</div>
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">11:30 AM</div>
                                 <div class="schedule-block time">11:45 AM</div>
                                 <div class="schedule-block time">12:00 PM</div>
@@ -386,14 +409,17 @@
                                 <div class="schedule-block time">15:15 PM</div>
                                 <div class="schedule-block time">15:30 PM</div>
                                 <div class="schedule-block time">15:45 PM</div>
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">16:00 PM</div>
                                 <div class="schedule-block time">16:15 PM</div>
                                 <div class="schedule-block time">16:30 PM</div>
                                 <div class="schedule-block time">16:45 PM</div>
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">17:00 PM</div>
                                 <div class="schedule-block time">17:15 PM</div>
                                 <div class="schedule-block time">17:30 PM</div>
                                 <div class="schedule-block time">17:45 PM</div>
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">18:00 PM</div>
                                 <div class="schedule-block time">18:15 PM</div>
                                 <div class="schedule-block time">18:30 PM</div>
@@ -420,8 +446,8 @@
                             <!-- Sunday -->
                             <div class="schedule-day">
                                 <div class="schedule-header">Sunday</div>
-                                <div class="schedule-block departure span-32">Arrival</div>
-                                <div class="schedule-block gala-dinner span-13">Welcoming Reception</div>
+                                <div class="schedule-block departure span-36">Arrival</div>
+                                <div class="schedule-block gala-dinner span-14">Welcoming Reception</div>
                                 <div class="schedule-block departure span-12">End</div>
                             </div>
 
