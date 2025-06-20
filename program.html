@@ -162,13 +162,13 @@
                     text-align: center;
                     color: rgba(112, 165, 174, 0.8); /* use your pinkish red */
                     margin-bottom: 10px;
-                    background-color: rgba(194, 73, 104, 0.2);
+                    background-color: #031B48;
                     padding: 8px;
                     border-radius: 5px;
                     }
 
                     .schedule-block {
-                    height: 96px; /* height for 1 time block */
+                    height: 108px; /* height for 1 time block */
                     border: 1px solid #ccc;
                     flex-direction: column;
                     display: flex;
@@ -197,42 +197,42 @@
                     background: transparent;
                     box-shadow: none;
                     margin-bottom: 0;
-                    height: 96px; /* keeps layout alignment */
+                    height: 108px; /* keeps layout alignment */
                     }
 
                     /* Span multiple time blocks */
                     .span-2 {
-                    height: calc(96px * 2); /* 2 blocks + 1 gap */
+                    height: calc(108px * 2); /* 2 blocks + 1 gap */
                     text-align: center;
                     }
 
                     .span-3 {
-                    height: calc(96px * 3); /* 3 blocks + 2 gaps */
+                    height: calc(108px * 3); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
                     .span-4 {
-                    height: calc(96px * 4); /* 3 blocks + 2 gaps */
+                    height: calc(108px * 4); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
                     .span-5 {
-                    height: calc(96px * 5); /* 3 blocks + 2 gaps */
+                    height: calc(108px * 5); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
                     .span-6 {
-                    height: calc(96px * 6); /* 3 blocks + 2 gaps */
+                    height: calc(108px * 6); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
                     .span-9 {
-                    height: calc(96px * 9); /* 3 blocks + 2 gaps */
+                    height: calc(108px * 9); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
                     .span-36 {
-                    height: calc(96px * 36); /* 3 blocks + 2 gaps */
+                    height: calc(108px * 36); /* 3 blocks + 2 gaps */
                     text-align: center;
                     }
 
@@ -392,15 +392,37 @@
                                 <div class="schedule-block meal span-4">Dinner</div>
                                 <div class="schedule-block departure span-4">End</div>
                             </div>
+
+                            <div class="schedule-day">
+                                <div class="schedule-header">Tuesday</div>
+                                <div class="schedule-block meal span-2">Breakfast</div>
+                                <div class="schedule-block invited-talk span-3" onclick="showModal('maria-zamyatina')"><b>Maria Zamyatina:</b><br>Atmospheric Chemistry of Solar and Extrasolar Gas Giants<br><em>Review Talk</em></div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('robin-baeyens')"><b>Robin Baeyens: </b>One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('brianna-lacy')"><b>Brianna Lacy: </b>Mapping Nonequilibrium Chemistry Trends in Cold Rogue Worlds</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('nathalie-grasser')"><b>Nathalie Grasser: </b>Chemical fingerprints of young L dwarf twins as proxies of gas giant atmospheres</div>
+                                <div class="schedule-block meal span-2">Coffee break</div>
+                                <div class="schedule-block invited-talk span-3" onclick="showModal('emily-deibert')"><b>Emily Deibert:</b><br>Probing Atmospheric Chemistry from High Resolution Spectroscopy<br><em>Review Talk</em></div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('krishna-kanumalla')"><b>Krishna Kanumalla: </b>A song of ice and fire…and rocks!: Probing the rock-to-ice content of ultrahot Jupiters using IGRINS</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('bibiana-prinoth')"><b>Bibiana Prinoth: </b>Hidden in plain sight: Using ESPRESSO's superpower to detect depleted titanium in WASP-121 b</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('linn-boldt-christmas')"><b>Linn Boldt-Christmas: </b>High-resolution spectroscopy studies of a cloudy and warm Neptune</div>
+                                <div class="schedule-block meal span-6">Lunch</div>
+                                <div class="schedule-block free-time">Discussion</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('james-kirk')"><b>James Kirk: </b>BOWIE-ALIGN: Testing the dependence of atmospheric composition on migration history with the misaligned hot Jupiter WASP-15b</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('nicole-wallack')"><b>Nicole Wallack: </b>Early Results from the JWST Giant Exoplanets Around M-dwarf Stars (GEMS) Program</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('yoav-rotman')"><b>Yoav Rotman: </b>It's a bird! It's a plane! It's… an unknown gas?: Overcoming Modeling Deficiencies in Retrievals of JWST Exoplanet Spectra</div>
+                                <div class="schedule-block contributed-talk" onclick="showModal('francisco-ardevol-martinez')"><b>Franciso Ardevol Martinez: </b>Overwhelmed with JWST data? Machine learning to the rescue!</div>
+                                <div class="schedule-block invited-talk span-4" onclick="showModal('spin-off-tuesday')"><b>Spin-off Evenings:</b><br>Machine Learning Applications in Climate Science Discussion Panel by <br><em>Chloe Fisher and Salma Salhi</em></div>
+                                <div class="schedule-block buffer">Buffer</div>
+                                <div class="schedule-block meal span-4">Dinner</div>
+                                <div class="schedule-block departure span-4">End</div>                             
+                            </div>
                         <tr>
-                            <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
                             <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
                             <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
                             <td rowspan="2" style="vertical-align: middle;" class="meal">Breakfast</td>
                         </tr>
                         <tr>
                             <td class="time">09:30 AM</td>
-                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('maria-zamyatina')"><b>Maria Zamyatina:</b><br>Atmospheric Chemistry of Solar and Extrasolar Gas Giants<br><em>Review Talk</em></td>
                             <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('elspeth-lee')"><b>Elspeth Lee:</b><br>Modelling Clouds in 3D<br><em>Review Talk</em></td>
                             <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('anjali-piette')"><b>Anjali Piette:</b><br>Deciphering the Compositions of Super-Earths and Sub-Neptunes with JWST<br><em>Review Talk</em></td>
                             <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('david-brain')"><b>David Brain:</b><br>Atmospheric Escape from Solary System Planets and Moons<br><em>Review Talk</em></td>
@@ -413,21 +435,18 @@
                         </tr>
                         <tr>
                             <td class="time">10:15 AM</td>
-                            <td class="contributed-talk" onclick="showModal('robin-baeyens')"><b>Robin Baeyens: </b>One, two, three! A multi-dimensional look at the chemistry of WASP-43 b</td>
                             <td class="contributed-talk" onclick="showModal('nishil-mehta')"><b>Nishil Mehta: </b>Combining JWST data and General Circulation Models for a 3D view of the warm Jupiter WASP-80b</td>
                             <td class="contributed-talk" onclick="showModal('matthew-nixon')"><b>Mathhew Nixon: </b>Observable signatures of magma-atmosphere interactions in sub-Neptunes</td>
                             <td class="contributed-talk" onclick="showModal('aaron-bello-arufe')"><b>Aaron Bello-Arufe: </b>Evidence for an atmosphere on the sub-Earth L98-59b</td>
                         </tr>
                         <tr>
                             <td class="time">10:30 AM</td>
-                            <td class="contributed-talk" onclick="showModal('brianna-lacy')"><b>Brianna Lacy: </b>Mapping Nonequilibrium Chemistry Trends in Cold Rogue Worlds</td>
                             <td class="contributed-talk" onclick="showModal('diana-powell')"><b>Diana Powell: </b>Spatially varying weather forecasts on hot Jupiters</td>
                             <td class="contributed-talk" onclick="showModal('cara-pesciotta')"><b>Cara Pesciotta: </b>Hazes and Habitability: The Interaction Between Atmospheric Haze and Liquid Surface Water</td>
                             <td class="contributed-talk" onclick="showModal('collin-cherubim')"><b>Collin Cherubim: </b>An Oxidation Gradient Spanning the Small Planet Radius Valley</td>
                         </tr>
                         <tr>
                             <td class="time">10:45 AM</td>
-                            <td class="contributed-talk" onclick="showModal('nathalie-grasser')"><b>Nathalie Grasser: </b>Chemical fingerprints of young L dwarf twins as proxies of gas giant atmospheres</td>
                             <td class="contributed-talk" onclick="showModal('sophia-vaughan')"><b>Sophia Vaughan: </b>Understanding the survival of desert wanderer: Characterizing LTT-9779 b in reflected light</td>
                             <td class="contributed-talk" onclick="showModal('harrison-nicholls')"><b>Harrison Nicholls: </b>Exploring the diversity of lava planet atmospheres through coupled interior-atmosphere modelling</td>
                             <td class="contributed-talk" onclick="showModal('mark-fortune')"><b>Mark Fortune: </b>Constraining the atmosphere of the rocky exoplanet LHS-1140c and lessons for the Rocky Worlds DDT from analysing JWST/MIRI data at the pixel-level</td>
@@ -437,14 +456,12 @@
                             <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
                             <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
                             <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
-                            <td rowspan="2" style="vertical-align: middle;" class="meal">Coffee break</td>
                         </tr>
                         <tr>
                             <td class="time">11:15 AM</td>
                         </tr>
                         <tr>
                             <td class="time">11:30 AM</td>
-                            <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('emily-deibert')"><b>Emily Deibert:</b><br>Probing Atmospheric Chemistry from High Resolution Spectroscopy<br><em>Review Talk</em></td>
                             <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('xinting-yu')"><b>Xinting Yu:</b><br>Bridging Laboratory Aerosol Studies and Atmospheric Modeling: Lessons from Titan<br><em>Review Talk</em></td>
                             <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('oliver-shorttle')"><b>Oliver Shorttle:</b><br>The search for life at planetary interfaces<br><em>Review Talk</em></td>
                             <td rowspan="3" style="vertical-align: middle;" class="invited-talk" onclick="showModal('leonardo-dos-santos')"><b>Leonardo Dos Santos:</b><br>A Tale of Asymmetric Transits, Missing Planets, and Finally Including Magnetic Fields<br><em>Review Talk</em></td>
@@ -457,28 +474,24 @@
                         </tr>
                         <tr>
                             <td class="time">12:15 PM</td>
-                            <td class="contributed-talk" onclick="showModal('krishna-kanumalla')"><b>Krishna Kanumalla: </b>A song of ice and fire…and rocks!: Probing the rock-to-ice content of ultrahot Jupiters using IGRINS</td>
                             <td class="contributed-talk" onclick="showModal('thomas-kennedy')"><b>Thomas Kennedy: </b>Exploring cloud uncertainties with a grid of hot Jupiter GCMs</td>
                             <td class="contributed-talk" onclick="showModal('esther-van-dijk')"><b>Esther van Dijk: </b>Retrieving interior properties of hot Jupiters with Love numbers and atmospheric measurements</td>
                             <td class="contributed-talk" onclick="showModal('eva-maria-ahrer')"><b>Eva-Maria Ahrer: </b>Escaping helium and muted features suggest a high-metallicity atmosphere on sub-Neptune GJ3090b from JWST transit spectroscopy</td>
                         </tr>
                         <tr>
                             <td class="time">12:30 PM</td>
-                            <td class="contributed-talk" onclick="showModal('bibiana-prinoth')"><b>Bibiana Prinoth: </b>Hidden in plain sight: Using ESPRESSO's superpower to detect depleted titanium in WASP-121 b</td>
                             <td class="contributed-talk" onclick="showModal('vighnesh-nagpal')"><b>Vighnesh Nagpal: </b>Clouds and Hazes on Sub-Neptunes: Insights from 2D Microphysical Modeling</td>
                             <td class="contributed-talk" onclick="showModal('charles-edouard-boukare')"><b>Charles-Edouard Boukare: </b>Exploring the Internal Dynamics of Lava Exoplanets</td>
                             <td class="contributed-talk" onclick="showModal('jaume-orell-miquel')"><b>Jaume Orell-Miquel: </b>Insights from the largest observational campaign on escaping atmospheres</td>
                         </tr>
                         <tr>
                             <td class="time">12:45 PM</td>
-                            <td class="contributed-talk" onclick="showModal('linn-boldt-christmas')"><b>Linn Boldt-Christmas: </b>High-resolution spectroscopy studies of a cloudy and warm Neptune</td>
                             <td class="contributed-talk" onclick="showModal('giulia-roccetti')"><b>Giulia Roccetti: </b>Exploring Earth's Reflected Light Through 3D Radiative Transfer Simulations</td>
                             <td class="contributed-talk" onclick="showModal('claire-guimond')"><b>Claire Guimond: </b>A geochemical view on the ubiquity of atmospheric CO2 on rocky exoplanets</td>
                             <td class="contributed-talk" onclick="showModal('shreyas-vissapragada')"><b>Shreyas Vissapragada: </b>Towards Precise Constraints on Atmospheric Evolution for 50 Sub-Neptunes</td>
                         </tr>
                         <tr>
                             <td class="time">13:00 PM</td>
-                            <td rowspan="6" style="vertical-align: middle;" class="meal">Lunch</td>
                             <td class="contributed-talk" onclick="showModal('yifan-zhou')"><b>Yifan Zhou: </b>JWST as an Exoplanet Weather Satellite: NIRCam Coronagraphic Monitoring of Beta Pic b</td>
                             <td rowspan="6" style="vertical-align: middle;" class="meal">Lunch</td>
                             <td class="remarks" style="vertical-align: middle;">Closing remarks</td>
@@ -544,24 +557,19 @@
                         </tr>
                         <tr>
                             <td class="time">17:00 PM</td>
-                            <td class="contributed-talk" onclick="showModal('james-kirk')"><b>James Kirk: </b>BOWIE-ALIGN: Testing the dependence of atmospheric composition on migration history with the misaligned hot Jupiter WASP-15b</td>
                             <td rowspan="4" style="vertical-align: middle;" class="invited-talk" onclick="showModal('spin-off-friday')"><b>Spin-off Evenings:</b><br>Going Beyond Academia<br><em>Cassandra Bolduc & Jeffrey Silverman</em></td>
                         </tr>
                         <tr>
                             <td class="time">17:15 PM</td>
-                            <td class="contributed-talk" onclick="showModal('nicole-wallack')"><b>Nicole Wallack: </b>Early Results from the JWST Giant Exoplanets Around M-dwarf Stars (GEMS) Program</td>
                         </tr>
                         <tr>
                             <td class="time">17:30 PM</td>
-                            <td class="contributed-talk" onclick="showModal('yoav-rotman')"><b>Yoav Rotman: </b>It's a bird! It's a plane! It's… an unknown gas?: Overcoming Modeling Deficiencies in Retrievals of JWST Exoplanet Spectra</td>
                         </tr>
                         <tr>
                             <td class="time">17:45 PM</td>
-                            <td class="contributed-talk" onclick="showModal('francisco-ardevol-martinez')"><b>Franciso Ardevol Martinez: </b>Overwhelmed with JWST data? Machine learning to the rescue!</td>
                         </tr>
                         <tr>
                             <td class="time">18:00 PM</td>
-                            <td rowspan="4" style="vertical-align: middle;" class="invited-talk" onclick="showModal('spin-off-tuesday')"><b>Spin-off Evenings:</b><br>Machine Learning Applications in Climate Science Discussion Panel by <br><em>Chloe Fisher and Salma Salhi</em></td>
                             <td rowspan="5" style="vertical-align: middle;" class="buffer">Buffer</td>
                         </tr>
                         <tr>
