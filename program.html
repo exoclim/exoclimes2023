@@ -236,6 +236,13 @@
                     height: calc(120px * 6 + 40px); /* total height: X normal blocks + 40px header */
                     box-sizing: border-box;
                     }
+                    .grouped-block-4 {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    height: calc(120px * 4 + 40px); /* total height: X normal blocks + 40px header */
+                    box-sizing: border-box;
+                    }
                     .grouped-block-header {
                     height: 40px;
                     background-color: #781c44;
@@ -243,6 +250,7 @@
                     line-height: 40px;
                     font-weight: bold;
                     border-bottom: 1px solid #ccc;
+                    color: white;
                     flex-shrink: 0;
                     }
                     .grouped-block-body {
@@ -447,7 +455,7 @@
                                 <div class="schedule-block time">10:45 AM</div>
                                 <div class="schedule-block time">11:00 AM</div>
                                 <div class="schedule-block time">11:15 AM</div>
-                                <!-- <div class="chair">Chair</div> -->
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">11:30 AM</div>
                                 <div class="schedule-block time">11:45 AM</div>
                                 <div class="schedule-block time">12:00 PM</div>
@@ -466,12 +474,12 @@
                                 <div class="schedule-block time">15:15 PM</div>
                                 <div class="schedule-block time">15:30 PM</div>
                                 <div class="schedule-block time">15:45 PM</div>
-                                <!-- <div class="chair">Chair</div> -->
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">16:00 PM</div>
                                 <div class="schedule-block time">16:15 PM</div>
                                 <div class="schedule-block time">16:30 PM</div>
                                 <div class="schedule-block time">16:45 PM</div>
-                                <!-- <div class="chair">Chair</div> -->
+                                <div class="chair">Chair</div>
                                 <div class="schedule-block time">17:00 PM</div>
                                 <div class="schedule-block time">17:15 PM</div>
                                 <div class="schedule-block time">17:30 PM</div>
@@ -505,6 +513,9 @@
                                 <div class="schedule-header">Sunday</div>
                                 <div class="schedule-block departure span-32">Arrival</div>
                                 <div class="small-block departure"></div>
+                                <div class="small-block departure"></div>
+                                <div class="small-block departure"></div>
+                                <div class="small-block departure"></div>
                                 <div class="schedule-block gala-dinner span-13">Welcoming Reception</div>
                                 <div class="schedule-block departure span-12">End</div>
                             </div>
@@ -515,7 +526,7 @@
                                 <div class="schedule-block meal">Breakfast</div>
                                 <div class="schedule-block remarks">Opening remarks</div>
                                 <div class="grouped-block">
-                                    <div class="grouped-block-header">Session I</div>
+                                    <div class="grouped-block-header">Session 1 - Chair: Clémence Fontanive</div>
                                     <div class="grouped-block-body">
                                         <div class="schedule-block invited-talk span-3" onclick="showModal('nicolas-cowan')"><b>Nicolas Cowan:</b><br>Observing Atmospheric Dynamics on Exoplanets<br><em>Review Talk</em></div>
                                         <div class="schedule-block contributed-talk" onclick="showModal('natalia-gomez')"><b>Natalia Lucia Oliveris Gomez: </b>Mapping the atmosphere of the BD binary system WISE 1049AB</div>
@@ -524,17 +535,32 @@
                                     </div>
                                 </div>
                                 <div class="schedule-block meal span-2">Coffee break</div>
-                                <div class="schedule-block invited-talk span-3" onclick="showModal('keren-duer-milner')"><b>Keren Duer-Milner:</b><br>Atmospheric Dynamics of Solar System Giants<br><em>Review Talk</em></div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('edouard-barrier')"><b>Edouard Barrier: </b>GCM simulations of temperature sub-Neptunes using a new convection scheme</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('robert-frazier')"><b>Robert Frazier: </b>WASP-121b Under the Gaze of JWST: How 3D Models Compare to its Spectroscopic Phase Curve</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('namrah-habib')"><b>Namrah Habib: </b>Do Episodic Storms Always Occur on Planets with Hydrogen-Rich Atmospheres? A Parameter-Space Study of Vertical Mixing in Sub-Neptune Exoplanets</div>
+                                <div class="grouped-block">
+                                    <div class="grouped-block-header">Session 2 - Chair: Denis Sergeev</div>
+                                    <div class="grouped-block-body">
+                                        <div class="schedule-block invited-talk span-3" onclick="showModal('keren-duer-milner')"><b>Keren Duer-Milner:</b><br>Atmospheric Dynamics of Solar System Giants<br><em>Review Talk</em></div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('edouard-barrier')"><b>Edouard Barrier: </b>GCM simulations of temperature sub-Neptunes using a new convection scheme</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('robert-frazier')"><b>Robert Frazier: </b>WASP-121b Under the Gaze of JWST: How 3D Models Compare to its Spectroscopic Phase Curve</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('namrah-habib')"><b>Namrah Habib: </b>Do Episodic Storms Always Occur on Planets with Hydrogen-Rich Atmospheres? A Parameter-Space Study of Vertical Mixing in Sub-Neptune Exoplanets</div>
+                                    </div>
+                                </div>
                                 <div class="schedule-block meal span-6">Lunch & Poster Session</div>
                                 <div class="schedule-block free-time span-10">Discussion (Free Time)</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('cathal-maguire')"><b>Cathal Maguire: </b>Multi-dimensional insights from high- and low-resolution spectroscopy</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('vincent-yariv')"><b>Vincent Yariv: </b>Towards Doppler Eclipse Mapping of Hot Jupiters</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('lennart-van-sluijs')"><b>Lennart van Sluijs: </b>1D Retrievals versus a 3D GCM: A Biased view of an Ultra Hot Jupiter at high resolution</div>
-                                <div class="schedule-block contributed-talk" onclick="showModal('vivien-parmentier')"><b>Vivien Parmentier: </b>A population view of hot Jupiter atmospheres</div>
-                                <div class="schedule-block invited-talk span-4" onclick="showModal('spin-off-monday')"><b>Spin-off Evenings:</b><br>How SciComm can help you with your research Workshop by <br><em>Marie-Ève Naud & Frédérique Baron</em></div>
+                                <div class="grouped-block-4">
+                                    <div class="grouped-block-header">Session 3 - Chair: Joost Wardenier</div>
+                                    <div class="grouped-block-body">
+                                        <div class="schedule-block contributed-talk" onclick="showModal('cathal-maguire')"><b>Cathal Maguire: </b>Multi-dimensional insights from high- and low-resolution spectroscopy</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('vincent-yariv')"><b>Vincent Yariv: </b>Towards Doppler Eclipse Mapping of Hot Jupiters</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('lennart-van-sluijs')"><b>Lennart van Sluijs: </b>1D Retrievals versus a 3D GCM: A Biased view of an Ultra Hot Jupiter at high resolution</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('vivien-parmentier')"><b>Vivien Parmentier: </b>A population view of hot Jupiter atmospheres</div>
+                                    </div>
+                                </div>
+                                <div class="grouped-block-4">
+                                    <div class="grouped-block-header">Panel Mod: René Doyon </div>
+                                    <div class="grouped-block-body">
+                                        <div class="schedule-block invited-talk span-4" onclick="showModal('spin-off-monday')"><b>Spin-off Evenings:</b><br>How SciComm can help you with your research Workshop by <br><em>Marie-Ève Naud & Frédérique Baron</em></div>
+                                    </div>
+                                </div>
                                 <div class="schedule-block buffer">Buffer</div>
                                 <div class="schedule-block meal span-8">Dinner</div>
                                 <div class="schedule-block departure span-8">End</div>
