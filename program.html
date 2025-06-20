@@ -205,7 +205,7 @@
 
                     .embedded-chair {
                         position: absolute;
-                        bottom: 0; /* aligns to the bottom of the parent */
+                        bottom: var(--embedded-offset, 0px); /* aligns to the bottom of the parent */
                         height: 40px;
                         width: 100%;
                         background-color: #781c44;
@@ -214,6 +214,10 @@
                         z-index: 2;
                         border-top: 1px solid #bbb;
                     }
+
+                    .bottom-0  { bottom: 0px; }
+                    .bottom-40 { bottom: 40px; }
+                    .bottom-80 { bottom: 80px; }
 
                     .time {
                     background-color: rgba(112, 165, 174, 0.8); /* same as your .time */
@@ -464,8 +468,8 @@
                             <div class="schedule-day">
                                 <div class="schedule-header">Sunday</div>
                                 <div class="schedule-block departure span-32">Arrival
-                                    <div class="embedded-chair" style="background-color: #D9D9D9;"></div>
-                                    <div class="embedded-chair" style="background-color: #D9D9D9;"></div>
+                                    <div class="embedded-chair bottom-40" style="background-color: #D9D9D9;"></div>
+                                    <div class="embedded-chair bottom-80" style="background-color: #D9D9D9;"></div>
                                 </div>
                                 <div class="schedule-block gala-dinner span-13">Welcoming Reception</div>
                                 <div class="schedule-block departure span-12">End</div>
