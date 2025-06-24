@@ -644,7 +644,7 @@
                                     <div class="grouped-block-header">Session 8 - Chair: Sarah Moran</div>
                                     <div class="grouped-block-body">
                                         <div class="schedule-block invited-talk span-3" onclick="showModal('xinting-yu')"><b>Xinting Yu:</b><br>Bridging Laboratory Aerosol Studies and Atmospheric Modeling: Lessons from Titan<br><em>Review Talk</em></div>
-                                        <div class="schedule-block contributed-talk" onclick="showModal('thomas-kennedy')"><b>Thomas Kennedy: </b>Exploring cloud uncertainties with a grid of hot Jupiter GCMs</div>
+                                        <div class="schedule-block contributed-talk" onclick="showModal('ryan-challener')"><b>Ryan Challener: </b>JWST-TST DREAMS: The Complete JWST Emission and Transmission Spectra of a Hot Jupiter</div>
                                         <div class="schedule-block contributed-talk" onclick="showModal('vighnesh-nagpal')"><b>Vighnesh Nagpal: </b>Clouds and Hazes on Sub-Neptunes: Insights from 2D Microphysical Modeling</div>
                                         <div class="schedule-block contributed-talk" onclick="showModal('giulia-roccetti')"><b>Giulia Roccetti: </b>Exploring Earth's Reflected Light Through 3D Radiative Transfer Simulations</div>
                                         <div class="schedule-block contributed-talk" onclick="showModal('yifan-zhou')"><b>Yifan Zhou: </b>JWST as an Exoplanet Weather Satellite: NIRCam Coronagraphic Monitoring of Beta Pic b</div>
@@ -1418,7 +1418,13 @@
             <p>In this talk, we introduce FlopPITy, a machine learning based retrieval method that accelerates retrievals by up to 40 times. FlopPITy is a likelihood-free inference method, based on iteratively training a normalising flow. We also discuss the benefits of the lack of likelihood and why the community might want to consider moving in this direction.</p>
             <p>The significant speed-up achieved by FlopPITy also allows for the use of more complex and computationally expensive forward models in retrievals, enabling new science that is not feasible with current methods. In particular, it enables the comparison of self-consistent models, that are too slow for traditional retrievals, with observations. This serves as a test-bed for our knowledge of physical processes of exoplanet atmospheres.</p>
             <p>To showcase the power of this new technique, we present an analysis of the complete 0.5-12 microns JWST transmission spectrum of WASP-39b. This is one of the first simultaneous retrievals on the broadband transmission spectrum of a hot Jupiter, and the first ever retrieval on transmission spectra with self-consistent models. In particular, we assume radiative-convective equilibrium, microphysical cloud formation, and chemical equilibrium adjusted to account for the effect of vertical mixing and photochemistry.</p>
-        
+        </div>
+
+        <div class="modal" id="ryan-challener">
+            <button class="close-btn" onclick="closeModal('ryan-challener')">Close</button>
+            <div class="modal-header">JWST-TST DREAMS: The Complete JWST Emission and Transmission Spectra of a Hot Jupiter</div>
+            <p>Exoplanet atmospheric thermal structure, winds and chemistry are complex and vary substantially from the planet's day to nightside. Often time intensive phase-curve observations spanning a broad range of wavelengths are employed to probe thermochemical spatial variations in atmospheres, but this is not always a feasible approach. In this talk I will showcase the complete 0.6-12 micron limb and dayside spectrum of the hot Jupiter WASP-17b measured from paired transit and eclipse measurements across NIRISS SOSS, NIRSpec G395H, and MIRI LRS instrument modes. In combination, these observations allow us to measure the chemical composition, changing temperature structure, and dynamics of the atmosphere in detail.  From the combined transmission spectrum we retrieve H2O, CO2, H-, K, SiO2 clouds, a temperature of ~1250 K, and an upper limit on the abundance of SO2. The combined emission spectrum shows dayside abundances consistent with measurements from the terminator, with confident detections of H2O and CO2. The dayside thermal profile is non-inverted from ~1700-2000K with the shortest wavelengths probing the deeper atmosphere, suggesting a potential to constrain the planet's internal temperature. Using eclipse mapping techniques, we constrain the mid-infrared hot-spot shift to 19 +11/-4 degrees east with a day-to-night temperature contrast that matches that measured in transmission.  Together, these spectra are an important legacy dataset, providing the most in-depth view of an exoplanet atmosphere to date and highlighting the ability to obtain complex multi-dimensional information without the need for phase curves.</p>
+        </div>
     
 
         <script>
@@ -1462,7 +1468,7 @@
 
 
 
-        </div>
+        
 
         <!-- FOOTER -->
         <footer class="footer-container container-fluid">
